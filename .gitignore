@@ -1,0 +1,22 @@
+# Virtual environments
+.venv/
+.venv311/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment variables / secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
