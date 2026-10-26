@@ -1,0 +1,2443 @@
+Test_Ticket,Status,True_Solution,Solution_Similarity,Ticket_Similarity,Representative_Ticket,Representative_Solution,Cluster_Score,Number_of_Tickets_in_Cluster,Baseline_Top1_Solution_Similarity,Baseline_Top1_Ticket_Similarity
+INC68475577,SUCCESS,Customer status is now active. A temporary password has been sent to the customer's email address.,1.0,0.8353115320205688,INC68476751,Customer status is now active. A temporary password has been sent to the customer's email address.,0.5676557660102844,1.0,0.07992237394875709,0.8806642293930054
+INC67544320,SUCCESS,"Hello Yassir access provided. please refer credentials below and reach me on microsoft teams in case of any issues, thank you
+
+Login: amnaouar
+Password: Welcome1
+Link: http://mykulwspc000421.kul-dc.dhl.com/login 
+
+",0.13485771475661912,0.5891258716583252,INC67951590,Set as requested.,0.4445629358291626,1.0,0.2165686639757964,0.8976503610610962
+INC61315351,SUCCESS,The accounts changed as requested,0.37117282033723836,0.786420464515686,INC65071915,"changes complete, new ID's shared on teams. please reach me on teams if any related issue, thank you for your patience and cooperation",0.8201157789721631,2.0,0.7036743755302324,0.8451970815658569
+INC71913630,SUCCESS,unlock Account,0.9756730713644057,0.9644141793251038,INC71762566,unlock Accounts,0.9254399614272231,3.0,0.9756730713644057,0.9644141793251038
+INC62415352,SUCCESS,"As per the request Printer IP address changed.
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MANDRPR1
+device for MANDRPR1: socket://23.82.71.234:9100
+MANDRPR1 accepting requests since Mon 27 May 2024 12:21:52 PM GMT
+printer MANDRPR1 is idle.  enabled since Mon 27 May 2024 12:21:52 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MANDRPR1
+device for MANDRPR1: socket://23.82.71.234:9100
+MANDRPR1 accepting requests since Thu 09 May 2024 10:34:21 AM GMT
+printer MANDRPR1 is idle.  enabled since Thu 09 May 2024 10:34:21 AM GMT
+[root@mytpmlspc000351 ~]# 
+
+[root@mykullspc000216 ~]# lpstat -t |grep MANDRPR1
+device for MANDRPR1: socket://23.82.71.234:9100
+MANDRPR1 accepting requests since Wed 15 Jan 2025 11:44:06 AM GMT
+printer MANDRPR1 is idle.  enabled since Wed 15 Jan 2025 11:44:06 AM GMT
+[root@mykullspc000216 ~]# 
+
+[root@mykullspc000578 ~]# lpstat -t |grep MANDRPR1
+device for MANDRPR1: socket://23.82.71.234:9100
+MANDRPR1 accepting requests since Wed 15 Jan 2025 03:25:10 PM GMT
+printer MANDRPR1 is idle.  enabled since Wed 15 Jan 2025 03:25:10 PM GMT
+[root@mykullspc000578 ~]# 
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.
+
+
+
+ ",0.6671290797686341,0.869576632976532,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.8177518977183569,9.0,0.49289199164447806,0.8985296487808228
+INC62067198,SUCCESS,IP has been changed.,0.3326798727887118,0.8678317070007324,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8206653443241978,11.0,0.7586810460225425,0.9628295302391052
+INC67178641,SUCCESS,SABLE Password reset for the user,0.022154880917866653,0.7492555379867554,INC67887532,Necessary done.,0.5246277689933777,1.0,0.3084708213845623,0.8337523937225342
+INC63132326,SUCCESS,"Filesystem for the call recording checked... folders were updated but media manager for not able to re-write older files. Reboot helped, new calls visible at the moment.",0.19437568378744702,0.5583704710006714,INC67702853,password reset,0.4291852355003357,1.0,0.19437568378744702,0.5583704710006714
+INC62703001,SUCCESS,"Extension has been re-configured, and issue is resolved.",0.47075941534008187,0.6890245676040649,INC61125642,changes complete,0.4945122838020325,1.0,0.4082537873435205,0.7682990431785583
+INC62342227,SUCCESS,"Printer IP has been updated.
+Resolved.",0.6417079014677578,0.9177087545394897,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.8142164270491705,11.0,0.6747625498012171,0.9196286201477051
+INC69863287,SUCCESS,The account reset for the new agent.,0.36335252037106214,0.7998237609863281,INC65071915,"changes complete, new ID's shared on teams. please reach me on teams if any related issue, thank you for your patience and cooperation",0.8569344323172712,2.0,0.7091801300353368,0.8894432187080383
+INC68350973,SUCCESS,PMT access has been granted as requested,0.8001138372054194,0.9913920164108276,INC68505429,PMT access has been granted for ldap oaitibou.,0.8823955120897684,4.0,0.8001138372054194,0.9913920164108276
+INC64210693,SUCCESS,"Printers created on the ps-avi print server with following names:
+MATNG-RCH-IM2702-AIROPS01
+MATNG-RCH-IM2702-GRDOPS01
+MACAS-RCH-MP201-RAMP01
+MACAS-RCH-MP201-RAMP02
+MACAS-RCH-MP2555-CARGO01",0.6243096973013358,0.6427679061889648,INC61302608,"done all mentioned printers installed on servers.
+
+MYKULLSPC000578
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+
+MYKULLSPC000216
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+
+MYTPMLSPC000351
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+
+MYTPMLSPC000352
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+
+",0.7482346124330586,3.0,0.6243096973013358,0.6427679061889648
+INC63350988,SUCCESS,Service hours set as requested.,0.1635640045164514,0.9745610952377319,INC68455629,"changes complete and confirmed so proceeding with closure, thank you",0.9477926414407263,2.0,0.1635640045164514,0.9745610952377319
+INC70121102,SUCCESS,unlock Account,0.9756730713644057,0.9939547777175903,INC71762566,unlock Accounts,0.9327190892634505,3.0,0.9756730713644057,0.9939547777175903
+INC61175291,SUCCESS,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.19186047699335468,0.5916981101036072,INC62067198,IP has been changed.,0.7204060813944244,2.0,0.9999999999999999,0.9648476243019104
+INC69127896,SUCCESS,"The template user has access to all MA facilities:
+----------
+Login amouzhir
+First Name Abdelmajid Mouzhir
+Email abdelmajid.mouzhir@dhl.com
+Country MOROCCO
+Application Access:
+DCVS/Image data capture/MA
+DCVS/Ops Supervisor/MA
+----------
+
+User access for famahbou has been updated from several CAS* facilities to all MA, based on the template user.
+----------
+Login famahbou
+Name FATIMA EZZAHRA MAKBOUL
+Email fatima_ezzahra.mahboul@dhl.com
+Country MOROCCO
+
+FROM
+Application Access:
+DCVS/Ops Management/
+CASPOR - CASA PORT Service Point,
+CASGTW - Casablanca Aviation,
+CASCAS - Casablanca Service Centre,CASABD - CASABLANCA ABDELMOUMEN Svce Point
+
+INTO:
+DCVS/Ops Management/MA
+----------
+",0.2419502662430236,0.6015323996543884,INC66191245,Access has been created. ,0.7982088923454285,2.0,0.1449002023878047,0.970811128616333
+INC67972111,SUCCESS,Customer status is now active. A temporary password has been sent to the customer's email address.,0.030808516591535585,0.7998228669166565,INC69197276,Necessary done,0.862739991922187,2.0,0.4774748639486242,0.889927327632904
+INC71099319,SUCCESS,DL has been created,0.4005942151058148,0.470129132270813,INC71420619,user created,0.7339824533730164,2.0,0.20950736030025294,0.5429941415786743
+INC71065774,SUCCESS,access granted as agreed on teams chat,0.3185246220066714,0.7254475355148315,INC65637887,Access granted. Please allow 1 to 2 hours for replication.,0.7932001968226081,2.0,0.30016080324837613,0.7747149467468262
+INC61880086,SUCCESS,"access granted.
+
+For refreshing training pls book and meeting and send me an invite for next Monday or Tuesday .
+
+If any questions on this subject..pls contact me directly via teams..Do not respond or reopen this ticket thx",0.27568772971230904,0.6586564779281616,INC62704490,"closing as confirmed, access provided. Thank you",0.47932823896408083,1.0,0.1193092534462677,0.6865636110305786
+INC67691443,SUCCESS,"
+We have granted the Debrief access.",0.8464144451084662,0.9213643074035645,INC67646826,"We have granted the Debrief access to the ldap ""mbouali"".",0.8114823362103241,4.0,0.8464144451084662,0.9213643074035645
+INC66479368,SUCCESS,All access has been granted,0.6282799385034464,0.7542169690132141,INC66191245,Access has been created. ,0.8691455125808716,2.0,0.07626314924198098,0.8663620948791504
+INC69849293,SUCCESS,Holiday on 1st May set as requested.,0.14170691409615993,0.8603216409683228,INC63737085,"Changes complete, closing as confirmed. Thank you very much",0.9011970084107885,2.0,0.12194943180268024,0.9820932149887085
+INC69866189,SUCCESS,"Hi Nabil,
+
+We have granted the access for you to TUNTUN Diagnostic Team group in ecase AQCC.
+
+Thank you,
+Veena V",0.30191480192506787,0.6630574464797974,INC65081688,PMT access has been granted as requested.,0.7533497648186811,4.0,0.721571316843066,0.951758861541748
+INC61075630,SUCCESS,"IPs changed as requested
+
+device for matngpr1: beh:/1/0/60/socket://23.82.242.234:9100
+[root@mytpmlspc000352 ~]# lpstat -v|grep -i matngpr2
+device for matngpr2: beh:/1/0/60/socket://23.82.242.235:9100
+",0.6066318573584771,0.8974866271018982,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.8062202892324919,10.0,0.6066318573584771,0.8974866271018982
+INC69713529,NO_ACTIONABLE_SOLUTION,Printer installed,,,,,,,,
+INC66639335,NO_ACTIONABLE_SOLUTION,Installed,,,,,,,,
+INC63321277,SUCCESS,"Triggered data from SDH2 to PIAM. User profile has updated in AD/EDS. Reflected in Teams/Outlook.
+
+Kindly wait for up to 24-48hours for replication to take place in Outlook/Teams profile.
+
+After 24-48hours, to see the changes :
+
+1) OUTLOOK WEB - https://outlook.office365.com/mail/
+2) TEAMS - Sign Out and Sign In again
+3) OUTLOOK - Download latest address book (Outlook > Send/Receive > Send/Receive Groups > Download Address Book",0.19459346462040927,0.4921511113643646,INC67728547,The Necessary changes are made successfuly.,0.39607555568218233,1.0,0.41549018123445874,0.9463469982147217
+INC67156306,SUCCESS,"Invistigation done.
+User disabled by PIAM , need to be extanded  by HR team.",0.20975769266881406,0.7004109025001526,INC67461226,"Hello Amine,
+
+Necessay changes are made.
+
+Best regards.",0.5002054512500763,1.0,0.13705597116337553,0.8054673075675964
+INC67769530,SUCCESS,unlocked,0.251322151569761,0.5280179977416992,INC67302526,"Access granted , please send us your location to make changes in the system.",0.41400899887084963,1.0,0.3692502426425373,0.7693113088607788
+INC61050624,SUCCESS,"Done printers installed and updated as requested.
+
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+device for MACASABD02: beh:/1/0/60/socket://23.82.236.235:9100
+MACASABD01 accepting requests since Mon 03 Jun 2024 03:34:26 PM GMT
+MACASABD02 accepting requests since Fri 27 Sep 2024 02:37:39 PM GMT
+printer MACASABD01 is idle.  enabled since Mon 03 Jun 2024 03:34:26 PM GMT
+printer MACASABD02 is idle.  enabled since Fri 27 Sep 2024 02:37:39 PM GMT",0.7779072044971378,0.9315773844718933,INC61687260,"IP 23.82.236.234 was already set on all servers. 
+
+[root@mykullspc000578 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Mon 11 Nov 2024 09:25:12 AM GMT
+printer MACASABD01 is idle.  enabled since Mon 11 Nov 2024 09:25:12 AM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Thu 14 Nov 2024 11:22:34 AM GMT
+printer MACASABD01 now printing MACASABD01-2839754.  enabled since Thu 14 Nov 2024 11:22:34 AM GMT
+MACASABD01-2839754      gca              84992   Thu 14 Nov 2024 11:22:34 AM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Fri 10 May 2024 03:43:20 PM GMT
+printer MACASABD01 is idle.  enabled since Fri 10 May 2024 03:43:20 PM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Mon 03 Jun 2024 03:34:26 PM GMT
+printer MACASABD01 is idle.  enabled since Mon 03 Jun 2024 03:34:26 PM GMT
+
+
+IP is pingible.
+
+[root@mytpmlspc000351 ~]# ping 23.82.236.234
+PING 23.82.236.234 (23.82.236.234) 56(84) bytes of data.
+64 bytes from 23.82.236.234: icmp_seq=1 ttl=109 time=243 ms
+64 bytes from 23.82.236.234: icmp_seq=2 ttl=109 time=243 ms
+64 bytes from 23.82.236.234: icmp_seq=3 ttl=109 time=243 ms
+^C
+--- 23.82.236.234 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 243.036/243.183/243.292/0.107 ms
+",0.800554183984937,12.0,0.7779072044971378,0.9315773844718933
+INC67878973,SUCCESS,zscaler is installed successfully,0.26927833760115233,0.5258198976516724,INC68209696,Remote into the scanner and installed OCNT3 app.,0.4129099488258362,1.0,0.011014902801681064,0.6124799251556396
+INC68886484,SUCCESS,Updated. Please allow at least 4 to 8 hours for complete replication.,0.24323007356099896,0.7128753662109375,INC69314965,Necessary done.,0.5064376831054688,1.0,0.12182184014863984,0.7752615213394165
+INC62702932,SUCCESS,Direct incoming number has been configured for all the extension.,0.09537308719296379,0.6549739837646484,INC68460070,"changes complete, please test and reach me on Teams in case of any issues",0.7851901697247532,3.0,0.540961213965988,0.8872203826904297
+INC64233577,SUCCESS,"Hello Youssef BOUDRA
+
+Upon checking MA country is not configured for Credit Card Payment method in CAA so it's clear the will no shipment with this payment method in the DBF.
+
+Specifically, for this AWB there is no PY/OK checkpoint available in the network or sent to CAA to be processed.
+
+See snapshots.
+
+Hope that clear and answered to your question.
+
+Thank you",0.43315435305513783,0.578101396560669,INC71295093,"AWB 5890609454 is B2L shipment created based on CSV booking PRG260629128602
+ 
+therefore it was validated in eSecure against PEDRO@ALGOROS.COM 
+ 
+and this email is approved in eSecure to use account 958446916 since June 2024
+ ",0.4390506982803345,1.0,0.43315435305513783,0.578101396560669
+INC64355365,SUCCESS,Stuck session released.,1.0,0.8658643960952759,INC64356031,Stuck session released.,0.582932198047638,1.0,1.0,0.8658643960952759
+INC70348118,SUCCESS,"Users  were created in DMAC backend. 
+They can register their devices now and download 3CA7 (GCA7) app..
+Please be aware 3CA7 config file has to be exported from PUD portal into DMAC folder tng.gtw / tng_bls.
+Note: correct printer IP is: 
+matngpr1: 23.82.242.234
+matngpr3: 23.82.14.5 
+Thank you.
+",0.24940646868822675,0.5424162149429321,INC66479368,All access has been granted,0.4212081074714661,1.0,0.39922761592171485,0.5588428974151611
+INC65628969,SUCCESS,"changes complete in TRT however delay in ticket closure, thanks",0.3182953127708075,0.8395177125930786,INC67969995,"changes complete, please reach to me on Teams in case of any issues, thank you",0.8674712520136976,2.0,0.44113273166150413,0.9710931777954102
+INC67124646,SUCCESS,"BT Time of Resolution : 2025-12-03T11:05:30Z
+BT Responsibility : Customer
+BT Reason For Outage : Enquiry
+BT Action to Resolve : Advice given
+BT Resolution Details : Site ID       : EMTO-MA-EXP-002, EMTO-MA-EXP-001 and EMTO-MA-EXP-000
+Site category       : copper premium
+Problem Statement Slowness in MA SDWAN sites : EMTO-MA-EXP-001, EMTO-MA-EXP-002, and EMTO-MA-DC-EXP-000.
+Resolved time :  29/11/2025 10:31:51 AM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : As checked there is no utilization high or losses over the link for all the MENTIONED  sites on 28th November . 
+ask customer to share ping and trace result but customer ask to close the case.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site ID       : EMTO-MA-EXP-002, EMTO-MA-EXP-001 and EMTO-MA-EXP-000
+Site category       : copper premium
+Problem Statement Slowness in MA SDWAN sites : EMTO-MA-EXP-001, EMTO-MA-EXP-002, and EMTO-MA-DC-EXP-000.
+Resolved time :  29/11/2025 10:31:51 AM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : As checked there is no utilization high or losses over the link for all the MENTIONED  sites on 28th November . 
+ask customer to share ping and trace result but customer ask to close the case.
+Reason for outage: Enquiry; Responsibility: Customer; Action to Resolve: Advice given",0.8545472375857981,0.8628586530685425,INC66068398,"BT Time of Resolution : 2025-10-08T06:36:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Enquiry
+BT Action to Resolve : Advice given
+BT Resolution Details : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+Reason for outage: Enquiry; Responsibility: Customer; Action to Resolve: Advice given",0.8914674493564116,2.0,0.8545472375857981,0.8628586530685425
+INC69541231,SUCCESS,"Youness ZMIRLI - 51845142 - 0520476842
+Mohamed Karim Mrini - 51845320 - 0520476820
+Abdellatif Chiheb - 51845220 - 0520476912
+Zakia Mouhtaram - 51845330 - 0520476915
+Hicham Belabbass - 51845230 - 0520476830
+Samia ES-SNOUSSI - 51855140 - 0520476905
+
+51855140, changed to Samia ES-SNOUSSI",0.20780770596652454,0.6897562742233276,INC70819088,Fixed by user,0.49487813711166384,1.0,0.2164547435898445,0.7751550674438477
+INC69150717,SUCCESS,"Dear User:
+
+User  Mohamed.Ifrah@dhl.com was removed from all DL that you requested.
+
+bh.commercialair-mea@dhl.com
+bicoe_df_powerbi_users@dhl.com
+caa.ma@dhl.com
+cas.ddpviahtr@dhl.com
+cas.tnsreprt@dhl.com
+commercial_sd_dq@dhl.com
+crisp.main_contact@dhl.com
+df_community@dhl.com
+ehra.report.users@dhl.com
+financewikicommunity@dpdhl.onmicrosoft.com
+fo_eemea_cfo@dhl.com
+g3pall@dhl.com
+istmawareness-dontletitgetthatfar@dpdhl.onmicrosoft.com
+ma.data.privacy@dhl.com
+ma.emergency@dhl.com
+mafc.champions@dhl.com
+ma.ias.alert@dhl.com
+ma_trc_cscesc3@dhl.com
+ma.volunteerday@dhl.com
+mr.ias.alert@dhl.com
+exp_am_glb_fin_bpo_ext-consumer@dhl.com
+
+**********************
+Important Information
+*********************
+
+Please allow 2–4 hours for global replication.
+
+If you experience any further problems, please do not hesitate to contact us with additional details so we can assist you further.
+
+O365 Support Team",0.44765514159721154,0.6861602067947388,INC68501533,User is re-enabled,0.4930801033973694,1.0,0.3214189121311703,0.7361993789672852
+INC64947491,SUCCESS,changes complete for tomorrow and will be reverted after working hour tomorrow,0.6173640464043637,0.9794164896011353,INC63737085,"Changes complete, closing as confirmed. Thank you very much",0.942932329694129,2.0,0.5804777816419392,0.9934326410293579
+INC68359158,SUCCESS,changes complete and tested,0.4687983507831908,0.7233007550239563,INC67969995,"changes complete, please reach to me on Teams in case of any issues, thank you",0.8118586885064152,3.0,0.45750156312482954,0.9969461560249329
+INC70233409,SUCCESS,"I spoke to caller.
+
+I have created:
+Workstation CASGTWCOY06
+CASGTWCOY06_PRT     23.82.13.27:9100 
+CASGTWCOY06_TLD850 (dimensions) 23.82.13.18:5210
+CASGTWCOY06_SCALE (weight)   23.82.13.16:4305 
+
+The scales are not yet connected.
+The plan is to connect them on Friday.
+
+Caller agreed we can close this ticket.
+
+ ",0.2667886265021544,0.6209713220596313,INC61174995,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.8081692755222321,2.0,0.6642412302042948,0.988281786441803
+INC61399066,SUCCESS,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8224511000538559,0.9618784189224243,INC61425587,"request completed on requested servers:
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA01
+device for MARBAAGA01: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA01 accepting requests since Thu 10 Jun 2021 12:38:00 PM GMT
+printer MARBAAGA01 is idle.  enabled since Thu 10 Jun 2021 12:38:00 PM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA02
+device for MARBAAGA02: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA02 accepting requests since Mon 24 May 2021 10:12:22 AM GMT
+printer MARBAAGA02 is idle.  enabled since Mon 24 May 2021 10:12:22 AM GMT
+[root@mytpmlspc000352 ~]#
+",0.8351737689804914,12.0,0.8224511000538559,0.9618784189224243
+INC62593314,SUCCESS,"I extracted a list of all work items present in the worklist for MA KAD Default queue.
+
+There were 44 work items in which we got the following message : Item no longer available, it has been submitted.
+
+I updated all of them at a database level, deleted cache and cookies on browser and checked again in MCT.
+
+The problematic work items are no longer listed in the Worklist.",0.43344951600383486,1.0000001192092896,INC63987229,"We have removed the problematic emails found in the screenshot attached to this ticket (312307841, 311355721,312713805) they should not appear on Souad work list.
+
+We will need specific details of emails to be deleted so we don't accidentally delete other emails, so if you want to remove other problematic emails, please open another ticket providing these details:
+
+Reference IDs with corresponding queues.
+Screenshots of problematic emails filtering by queue instead of agent.",0.6500000596046448,1.0,0.43344951600383486,1.0000001192092896
+INC68933882,SUCCESS,Access has been granted,0.6985650595983827,0.606921374797821,INC68350973,PMT access has been granted as requested,0.7403115034946945,2.0,0.162588759640485,0.6365785598754883
+INC61302608,SUCCESS,"done all mentioned printers installed on servers.
+
+MYKULLSPC000578
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+
+MYKULLSPC000216
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+
+MYTPMLSPC000351
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+
+MYTPMLSPC000352
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+
+",0.8952406655500964,0.9013499021530151,INC61302569,"Completed, printers installed on demanded servers:
+MAKENPR4
+----------
+device for MAKENPR4: beh:/1/0/60/socket://23.82.61.234:9100
+MAKENPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAKENPR3
+----------
+device for MAKENPR3: beh:/1/0/60/socket://23.82.61.235:9100
+MAKENPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR4
+----------
+device for MARAKPR4: beh:/1/0/60/socket://23.82.50.234:9100
+MARAKPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR3
+----------
+device for MARAKPR3: beh:/1/0/60/socket://23.82.50.235:9100
+MARAKPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR4
+----------
+device for MAAGAPR4: beh:/1/0/60/socket://23.82.240.234:9100
+MAAGAPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAAGAPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR3
+----------
+device for MAAGAPR3: beh:/1/0/60/socket://23.82.240.235:9100
+MAAGAPR3 accepting requests since Wed 16 Oct 2024 10:33:22 PM GMT
+printer MAAGAPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:22 PM GMT
+",0.8263850134905102,3.0,0.8952406655500964,0.9013499021530151
+INC65081688,SUCCESS,PMT access has been granted as requested.,0.6970410785370951,0.924507737159729,INC66561784,LDAP jni6o1 has been granted PMT access for both facilities TNGTNG and TNGTTU.,0.8637046809707571,4.0,0.6970410785370951,0.924507737159729
+INC64194326,SUCCESS,"Rejecetd as ""hcas"" is not a user.
+New access has been granted to both operator_yghoumar & operator_yboudra",0.39574049805224587,0.6028550863265991,INC66191424,Access has been created. ,0.7522141683524204,3.0,0.10717541735256852,0.689402163028717
+INC68751117,SUCCESS,"access granted
+Yassir will check all assiciated agents are visible. ",0.15642245037826563,0.835285484790802,INC69214837,DCE access granted,0.567642742395401,1.0,0.19340136371494368,0.8637113571166992
+INC66853241,SUCCESS,"Devices synced, confirmed to be working.",0.2991831243316364,0.5075801610946655,INC65044479,Secure BIOS has been enabled as requested.,0.4037900805473328,1.0,0.19097570731093014,0.7077954411506653
+INC61425691,SUCCESS,IP has been changed. ,0.3326798727887118,0.8868280649185181,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8345678949512971,10.0,0.7586810460225425,0.9060705304145813
+INC70698577,SUCCESS,TNGGTW.OPSMGT@dhl.com created,0.05312415030603384,0.6695420742034912,INC67461226,"Hello Amine,
+
+Necessay changes are made.
+
+Best regards.",0.4847710371017456,1.0,0.14815096036888467,0.7253066301345825
+INC67761932,SUCCESS,"Salam Tarik,
+
+The two accounts are well added on the customer session. and well configured on Esecure.",0.4948012686968961,0.8824515342712402,INC67335582,Customer status is now active. A temporary password has been sent to the customer's email address.,0.5912257671356201,1.0,0.1684892667560164,0.9040511250495911
+INC68460070,SUCCESS,"changes complete, please test and reach me on Teams in case of any issues",0.9688718903601158,0.6587256789207458,INC67969995,"changes complete, please reach to me on Teams in case of any issues, thank you",0.7730839889540815,2.0,0.17222974894533813,0.8718229532241821
+INC64323916,SUCCESS,ipam updated,0.3009538693391175,0.9952735900878906,INC62081802,"IP subnets were created including DHCP pools as requested and specified under attached document 
+
+Confirmed as functional",0.6476367950439453,1.0,0.3009538693391175,0.9952735900878906
+INC64805818,SUCCESS,PMT access has been granted for ldap jlw2t1.,0.7831344637593911,0.8331420421600342,INC68350973,PMT access has been granted as requested,0.8396286802239545,4.0,0.7831344637593911,0.8331420421600342
+INC64898699,SUCCESS,"As requested, the following MODERN DL below have been updated with Abdelilah.SAMIT@dhl.com and Nabil.mahmoud@dhl.com as owner:
+++++++++++++
+rbamvt@dhl.com
+FesMvt@dhl.com
+MekMvt@dhl.com
+TngMvt@dhl.com
+++++++++++++",0.4762679605809338,0.8557616472244263,INC63628947,"Ownership changed, please use GLOBAL-o365 next time, thank you. Report attached.
+
+notes
+- report indicates which group is legacy and which modern
+- legacy groups can only have one owner effectively
+
+To manage legacy DLs (before they are migrated to cloud):
+To make changes:
+https://mail.dhl.com/ecp
+To request a removal:
+https://servicenow.dhl.com/requestit/category_service.do?sysparm_parent=723169dec3e3c2980767baff05013192
+
+To manage modern DLs (after they are migrated to cloud):
+https://admin.exchange.microsoft.com/?page=groups&form=owa_groups#/
+
+",0.5778808236122132,1.0,0.38672537499512083,0.8789600133895874
+INC64983716,SUCCESS,Browser setting changed,0.03311844919856485,0.5069478750228882,INC63573000,"Request:
+Access to Team, Assignment
+
+Root Cause:
+access request
+
+Action:
+add access prg team assignment
+
+Solution:
+Access granted and ticket proceed to close ",0.4034739375114441,1.0,0.06535345498515761,0.5403165817260742
+INC68569630,SUCCESS,"20260225_174620mkubecek.csv
+UID dhlemployeetype Status
+sr_rpacsMAkart SharedResource Updated
+
+Account type has been changed to a shared mailbox with all necessary permissions to owner Nabil.MAHMOUD@dhl.com
+
+Please note, it can take up to 48 hours when all changes will be visible in Global Address Book, Skype, Lync, MyNet, etc. ",0.672334989316178,0.7083888053894043,INC68436860,"Password has been reset for account  PRG-DC\sr_rpacsMAkart and confirmation email with credentials has been sent to requestor  Nabil.MAHMOUD@dhl.com
+
+account has been converted to ServiceAccount
+
+
+ID: sr_rpacsMAkart
+Name: rpacsMAkart (DHL MA)
+Type: ServiceAccount
+Email: rpacsMAkart@dhl.com
+UPN: rpacsMAkart@dhl.com
+MailHost: gesmail.dhl.com
+OU: OU=Users,O=dhl.com
+Country: MA
+CREST: DMAXXX
+Manager: jl4mn1
+AD DN: CN=sr_rpacsMAkart,OU=Users,OU=Express,OU=MA,DC=prg-dc,DC=dhl,DC=com
+AD created: 9/18/2025 7:51:56 AM
+AD changed: 2/19/2026 3:18:39 PM
+LDAP DN: uid=sr_rpacsMAkart,OU=Users,O=dhl.com
+LDAP created: 9/18/2025 7:52:54 AM
+LDAP changed: 2/19/2026 3:17:13 PM
+SAP SNC: p:CN=SR_RPACSMAKART@PRG-DC.DHL.COM
+Last PWD reset: 2/19/2026 3:20:08 PM
+PWD expire: 2/19/2027 3:16:46 PM
+UAC: 512",0.5041944026947022,1.0,0.672334989316178,0.7083888053894043
+INC67335582,SUCCESS,Customer status is now active. A temporary password has been sent to the customer's email address.,0.4948012686968961,0.8824515342712402,INC67761932,"Salam Tarik,
+
+The two accounts are well added on the customer session. and well configured on Esecure.",0.5912257671356201,1.0,0.12328824598187238,0.9018914103507996
+INC71762566,SUCCESS,unlock Accounts,0.9756730713644057,0.9939547777175903,INC70121102,unlock Account,0.9289026163586769,3.0,0.9756730713644057,0.9939547777175903
+INC70475284,SUCCESS,GCA access has been granted to all requested users.,0.2733675572899915,0.7153608798980713,INC69127746,"uid dhlApplicationUsage Status
+yassuibg GCA Updated
+
+Please allow 2 to 4 hours for replication.",0.5076804399490357,1.0,0.2733675572899915,0.7153608798980713
+INC68379433,SUCCESS,"Requested route is removed from GCA7 backend 
+",0.2261145172559529,0.48243650794029236,INC60999530,"By default, no county cutoff codes are configured for the country TN in the TUN service area, unlike the country MA's CAS and RBA service area, which has the following setting.
+
+CAS 08:00:00 13:31:00 A
+CAS 13:32:00 18:30:00 B
+RBA 08:00:00 13:31:00 A
+RBA 13:32:00 18:30:00 B
+
+Please raise another ticket if want to configure the same for TN.",0.3912182539701462,1.0,0.26073346583578183,0.5653443336486816
+INC68455629,SUCCESS,"changes complete and confirmed so proceeding with closure, thank you",0.2752476695701593,0.9971909523010254,INC62972826,Working hours for all departments have been changed as requested.,0.6485954761505127,1.0,0.2752476695701593,0.9971909523010254
+INC68210003,SUCCESS,"done.
+
+device for TNSNDGCA01: beh:/1/0/60/socket://23.248.188.48:9100
+TNSNDGCA01 accepting requests since Mon 06 Oct 2025 05:04:08 PM GMT
+printer TNSNDGCA01 is idle.  enabled since Mon 06 Oct 2025 05:04:08 PM GMT
+device for TNSNDGCA02: beh:/1/0/60/socket://23.248.188.49:9100
+TNSNDGCA02 accepting requests since Mon 06 Oct 2025 05:06:09 PM GMT
+printer TNSNDGCA02 is idle.  enabled since Mon 06 Oct 2025 05:06:09 PM GMT
+",0.615393318042659,0.9051194190979004,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.825119598441129,10.0,0.47380285213076895,0.9099940061569214
+INC68230635,SUCCESS,changes complete please ping me on teams in case of any issues,0.1790305201557523,0.650571346282959,INC70055495,Both extension changed.,0.4752856731414795,1.0,0.2396246169204131,0.7183147072792053
+INC65044479,SUCCESS,Secure BIOS has been enabled as requested.,0.2991831243316364,0.5075801610946655,INC66853241,"Devices synced, confirmed to be working.",0.4037900805473328,1.0,0.024427569698627555,0.5719125270843506
+INC67461226,SUCCESS,"Hello Amine,
+
+Necessay changes are made.
+
+Best regards.",0.5031065642097065,0.7810600996017456,INC70939728,Necessary done.,0.5405300498008728,1.0,0.4285262133090851,0.8074408769607544
+INC67843924,SUCCESS,Sharepoint created,0.1671841391027444,0.5054988861083984,INC66479368,All access has been granted,0.40274944305419924,1.0,0.16565963512067255,0.6004694104194641
+INC67865859,NO_ACTIONABLE_SOLUTION,"No risk detected as per GLOBAL-IAM confirmation in ticket INC67868007.
+
+Seems it was a delayed on the system, in case you want to avoid any security issue with his account you can perform a MFA reset, but his account is not in risk.",,,,,,,,
+INC69123268,SUCCESS,A new password generated and just send to  customer,0.11689801691067833,0.6378625631332397,INC67728547,The Necessary changes are made successfuly.,0.4689312815666199,1.0,0.32482477654007563,0.7268690466880798
+INC64652310,SUCCESS,"-  Re-assign agent 51856223 to ""htadini""(houda.tadini@dhl.com), change extension name to ""Houda TADINI"".
+    51856223 Actually assigned to ""PRG-DC\mhaimoud"" : changed position and no need to be part of any skillset
+    ""htadini"" is not assigned to any agent actually.
+  
+
+--> agent htadini assigned to 51856223
+
+
+-  Create New Agent assigned to New extension GCCU GTW Instance, Assign to ""amedfar""(Aziz.MEDFAR@dhl.com)
+    Extension name should be ""Aziz MEDFAR""
+    ""amedfar"" should be the Supervisor of the Competency : ""MA_GTW_Normal_Customs"", assigned agents (51856211, and 51856223)
+    Could you please create an ACCS access for him.
+
+--> new supervisor created: 51856224
+Access to ACCS: 
+username: amedfar
+Password: welcome1
+
+please ask him to change password once he firsttime login
+
+
+
+-  User ""PRG-DC\amessaou"" actually Supervisor of the Competency : ""MA_GTW_Normal_Customs"", should keep the same assigned agent 
+    ""51856178"", and should be a simple Agent under Competency ''MA_GTW_FL_Q""
+
+--> 51856178 changed to an agent and assigned to queue MA_GTW_FL_Q under supervisor Chami Lamya",0.32847692395103756,0.8365312814712524,INC65071915,"changes complete, new ID's shared on teams. please reach me on teams if any related issue, thank you for your patience and cooperation",0.8705269437327527,2.0,0.37400238179647444,0.9038496017456055
+INC63134300,SUCCESS,Both extensions reconfigured.,0.18499356914368642,0.8482605218887329,INC65071915,"changes complete, new ID's shared on teams. please reach me on teams if any related issue, thank you for your patience and cooperation",0.8788246553435468,2.0,0.36281833353552634,0.9084378480911255
+INC64341450,SUCCESS,Printer drivers were updated and issue resolved.,0.5092204739325996,0.964550793170929,INC65033159,"Mentioned printers were recreated on both servers as requested.
+
+device for matngpr3: beh:/1/0/60/socket://23.82.14.5:9100
+device for matngpr4: beh:/1/0/60/socket://23.82.14.6:9100
+matngpr3 accepting requests since Mon 04 Aug 2025 02:03:25 PM GMT
+matngpr4 accepting requests since Mon 04 Aug 2025 02:03:32 PM GMT
+printer matngpr3 is idle.  enabled since Mon 04 Aug 2025 02:03:25 PM GMT
+printer matngpr4 is idle.  enabled since Mon 04 Aug 2025 02:03:32 PM GMT",0.8038722059996055,3.0,0.5092204739325996,0.964550793170929
+INC64863200,SUCCESS,Reset profile,0.12551616786779354,0.646277666091919,INC67595220,"Hello,
+
+Another ticket created to grant you access.
+
+INC67646826",0.4731388330459595,1.0,0.13667116428566745,0.7243903279304504
+INC66170396,SUCCESS,"Printer has been created successfully
+",0.5173277105931716,0.8909149169921875,INC69349039,"Hi, Printer is added to requested servers. Thanks
+
+
+[root@mykullspc000484 ~]# lpadmin -p MARBAOUDPR01 -E -v beh:/1/0/60/socket://23.82.248.234:9100 -m raw
+[root@mykullspc000484 ~]# lpstat -t | grep MARBAOUDPR01
+device for MARBAOUDPR01: beh:/1/0/60/socket://23.82.248.234:9100
+MARBAOUDPR01 accepting requests since Fri 03 Apr 2026 03:01:22 PM GMT
+printer MARBAOUDPR01 is idle.  enabled since Fri 03 Apr 2026 03:01:22 PM GMT",0.8226763161418251,5.0,0.5173277105931716,0.8909149169921875
+INC64356031,SUCCESS,Stuck session released.,1.0,0.8658644556999207,INC64355365,Stuck session released.,0.5829322278499603,1.0,1.0,0.8658644556999207
+INC67969995,SUCCESS,"changes complete, please reach to me on Teams in case of any issues, thank you",0.3182953127708075,0.8395175933837891,INC65628969,"changes complete in TRT however delay in ticket closure, thanks",0.5697587966918946,1.0,0.24718864742637184,0.8529931306838989
+INC63529078,SUCCESS,"
+***************************** SOLUTION - READ ME PLEASE ********************************
+
++ Please reach us back once got the approval from Lamya Chami (DHL MA) to reset the password for your account
+
+________________________________________________________________________________________
+>>>>>> At the end of this email, you can provide your feedback on the Service provided by [Joyal chinnappar], 
+using a star scale from 1 (the lowest) to 5 (the highest) to rate your satisfaction. <<<<<<
+
+To get information on an existing ticket or how to solve IT issues, please visit http://requestit.dhl.com
+***************************************** END ****************************************
+",0.528513856783786,0.6872323751449585,INC67178641,SABLE Password reset for the user,0.49361618757247927,1.0,0.7897787509161532,0.7453160881996155
+INC69423044,SUCCESS,"Request completed. Please raise new ticket if had further query on this.
+
+Best regards,
+Faeez",0.08575521639582724,0.487974613904953,INC66191424,Access has been created. ,0.7413055598735809,2.0,0.1611582283245765,0.5143139958381653
+INC71624265,SUCCESS,"uid extensionAttribute12 Status
+maggenes CloudSync Updated
+macgenes CloudSync Updated
+
+Please allow 2 to 4 hours for replication and verify.",0.29200666223836375,0.530814528465271,INC68351684,"Access granted.
+Pls check and confirm",0.757097130598404,2.0,0.3479266997923319,0.5555263161659241
+INC65033159,SUCCESS,"Mentioned printers were recreated on both servers as requested.
+
+device for matngpr3: beh:/1/0/60/socket://23.82.14.5:9100
+device for matngpr4: beh:/1/0/60/socket://23.82.14.6:9100
+matngpr3 accepting requests since Mon 04 Aug 2025 02:03:25 PM GMT
+matngpr4 accepting requests since Mon 04 Aug 2025 02:03:32 PM GMT
+printer matngpr3 is idle.  enabled since Mon 04 Aug 2025 02:03:25 PM GMT
+printer matngpr4 is idle.  enabled since Mon 04 Aug 2025 02:03:32 PM GMT",0.5092204739325996,0.964550793170929,INC64341450,Printer drivers were updated and issue resolved.,0.863396419115054,2.0,0.5092204739325996,0.964550793170929
+INC68224546,SUCCESS,"Hello,
+
+Necessary changes are made.
+
+Best regards.",0.24157733850190297,0.8168565034866333,INC67761932,"Salam Tarik,
+
+The two accounts are well added on the customer session. and well configured on Esecure.",0.5584282517433167,1.0,0.32954318084710194,0.8798225522041321
+INC61574090,SUCCESS,"Requested printer ip has been changed in below servers.
+
+MYKULLSPC000578
+MYKULLSPC000216
+MYTPMLSPC000351
+MYTPMLSPC000352
+
+",0.5935167776349546,0.981154203414917,INC61209735,"The printer has been created as requested.
+
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1719573909 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547352 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000578 ~]#
+
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1720520445 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547391 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000216 ~]#
+
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1714815877 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547420 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000351 ~]#
+
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1716476134 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547449 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000352 ~]#
+
+Thanks.",0.8381555318417628,11.0,0.5935167776349546,0.981154203414917
+INC68209696,SUCCESS,Remote into the scanner and installed OCNT3 app.,0.524718472089286,0.5498292446136475,INC62558517,Abdelilah identified an issue with the scanner. Device will be replaced.,0.42491462230682375,1.0,0.028989042247683495,0.6287411451339722
+INC67516255,SUCCESS,"Hi, IP of printers changed.
+
+root@mykullspc000484 ~]#  lpstat -t | grep macaspr1
+device for macaspr1: beh:/1/0/60/socket://23.82.1.22:9100
+macaspr1 accepting requests since Tue 23 Dec 2025 01:52:03 PM GMT
+printer macaspr1 is idle.  enabled since Tue 23 Dec 2025 01:52:03 PM GMT
+[root@mykullspc000484 ~]# lpadmin -p macaspr1 -E -v beh:/1/0/60/socket://23.82.1.21:9100
+[root@mykullspc000484 ~]# lpstat -t | grep macaspr2
+device for macaspr2: beh:/1/0/60/socket://23.82.1.22:9100
+macaspr2 accepting requests since Tue 23 Dec 2025 01:25:37 PM GMT
+printer macaspr2 is idle.  enabled since Tue 23 Dec 2025 01:25:37 PM GMT
+[root@mykullspc000484 ~]# lpstat -t | grep macaspr1
+device for macaspr1: beh:/1/0/60/socket://23.82.1.21:9100
+macaspr1 accepting requests since Tue 23 Dec 2025 01:52:03 PM GMT
+printer macaspr1 is idle.  enabled since Tue 23 Dec 2025 01:52:03 PM GMT
+",0.7362526320691506,0.817885160446167,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8076174676807857,9.0,0.6608250356734918,0.8696835041046143
+INC67887530,SUCCESS,"Hi Benaissa,
+The user should first be created by the HR team. Once the user has been created, you can raise a ticket to grant access to the applications.
+Thanks,
+Nabil",0.4663469360294054,0.7505606412887573,INC67275499,Access granted,0.5252803206443787,1.0,0.013482994460071233,0.7817556262016296
+INC62972826,SUCCESS,Working hours for all departments have been changed as requested.,0.2752476695701593,0.9971909523010254,INC68455629,"changes complete and confirmed so proceeding with closure, thank you",0.94155811480651,2.0,0.2752476695701593,0.9971909523010254
+INC68351684,SUCCESS,"Access granted.
+Pls check and confirm",0.9903937365670272,0.9264305830001831,INC68352009,Access granted. pls check and confirm,0.6132152915000916,1.0,0.6666159839094843,0.9265130758285522
+INC70096001,SUCCESS,ELR updated with new IP,0.22420016337387763,0.42412900924682617,INC64691755,"Hi Abdelilah.
+After internal discussion, the error is caused by the mailbox not being available/created for the employees.
+Kindly check with the User's manager to request a mailbox creation for his report via PIAM.
+
+For further assistance with mailbox creation, kindly reachout to Jakub.Vozar@dhl.com from PIAM team. After the creation, the issue will be resolved in EOS on the next run.",0.3620645046234131,1.0,0.4241314178689366,0.833255410194397
+INC62077306,SUCCESS,"Thank you Nabil for having remote screen.
+----------------------------------
+Fixed by reporting to old DB.
+
+Tomas",0.3148897258891456,0.47373008728027344,INC66525504,"BT Time of Resolution : 2025-11-03T11:27:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Capacity / Utilisation
+BT Action to Resolve : No Action Taken
+BT Resolution Details : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+Reason for outage: Capacity / Utilisation; Responsibility: Customer; Action to Resolve: No Action Taken",0.7057834240687835,2.0,0.3966931442069638,0.5918072462081909
+INC63737085,SUCCESS,"Changes complete, closing as confirmed. Thank you very much",0.6173640464043637,0.9794162511825562,INC64947491,changes complete for tomorrow and will be reverted after working hour tomorrow,0.6397081255912781,1.0,0.6173640464043637,0.9794162511825562
+INC64691755,SUCCESS,"Hi Abdelilah.
+After internal discussion, the error is caused by the mailbox not being available/created for the employees.
+Kindly check with the User's manager to request a mailbox creation for his report via PIAM.
+
+For further assistance with mailbox creation, kindly reachout to Jakub.Vozar@dhl.com from PIAM team. After the creation, the issue will be resolved in EOS on the next run.",0.2735654296818563,0.5233814716339111,INC71736542,"DL created
+EXPMA.HR@dhl.com",0.4116907358169556,1.0,-0.047075197162073826,0.9266976118087769
+INC61209735,SUCCESS,"The printer has been created as requested.
+
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1719573909 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547352 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000578 ~]#
+
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1720520445 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547391 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000216 ~]#
+
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1714815877 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547420 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000351 ~]#
+
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1716476134 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547449 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000352 ~]#
+
+Thanks.",0.5518439673558091,0.9272599816322327,INC61209815,"updated
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+
+
+and created
+
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+",0.8457552012512759,10.0,0.5935167776349546,0.981154203414917
+INC63105756,SUCCESS,"Hello Ali,
+
+Please use webmail, cause we need to reset your computer and this will take time.
+
+Thanks.",0.28460649012454825,0.840651273727417,INC71517160,Access granted,0.5703256368637085,1.0,0.2117685020132047,0.9227319955825806
+INC66191424,SUCCESS,Access has been created. ,0.9999999999999999,0.9256851673126221,INC66191245,Access has been created. ,0.6128425836563111,1.0,0.9999999999999999,0.9256851673126221
+INC65363499,SUCCESS,"Printer setup has been updated and it is working now.
+
+Resolved.
+",0.6003574284841808,0.7447445392608643,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.7899062442687628,4.0,0.4058813251657426,0.8635546565055847
+INC66989858,SUCCESS,installed,1.0,0.8342638611793518,INC67049455,installed,0.5671319305896759,1.0,1.0,0.8342638611793518
+INC66703769,SUCCESS,"***************************** SOLUTION - READ ME PLEASE ********************************
+
+ID vic61wwh has been unlocked
+
+If any other issue appears, please submit a new ticket.
+Have a great day! 
+
+________________________________________________________________________________________
+>>>>>> At the end of this email, you can provide your feedback on the Service provided by [Mohd Fizry Sahar], 
+using a star scale from 1 (the lowest) to 5 (the highest) to rate your satisfaction. <<<<<<
+
+To get information on an existing ticket or how to solve IT issues, please visit http://requestit.dhl.com
+***************************************** END ****************************************
+",0.25270931907563066,0.6036366820335388,INC67302526,"Access granted , please send us your location to make changes in the system.",0.45181834101676943,1.0,0.2975539733622233,0.6341657638549805
+INC66212872,SUCCESS,We have granted the Debrief access.,0.8464144765005416,0.6840239763259888,INC67646826,"We have granted the Debrief access to the ldap ""mbouali"".",0.7882570561963897,4.0,0.22406778633267863,0.746590256690979
+INC66615978,SUCCESS,Installation done,0.21272236039631412,0.7490687370300293,INC64635432,Fixed by supplier,0.5245343685150147,1.0,0.42933005213598724,0.8655517101287842
+INC67595220,SUCCESS,"Hello,
+
+Another ticket created to grant you access.
+
+INC67646826",0.282396145831474,0.7393674254417419,INC67761932,"Salam Tarik,
+
+The two accounts are well added on the customer session. and well configured on Esecure.",0.519683712720871,1.0,0.31612616261116805,0.7520599961280823
+INC67646826,SUCCESS,"We have granted the Debrief access to the ldap ""mbouali"".",0.8464144451084662,0.9213643074035645,INC67691443,"
+We have granted the Debrief access.",0.8394685887166797,4.0,0.8464144451084662,0.9213643074035645
+INC65071915,SUCCESS,"changes complete, new ID's shared on teams. please reach me on teams if any related issue, thank you for your patience and cooperation",0.18499356914368642,0.8482605218887329,INC63134300,Both extensions reconfigured.,0.5741302609443665,1.0,0.18499356914368642,0.8482605218887329
+INC70650195,SUCCESS,"Access granted.
+Will be activated in 72h.",0.5747833787899419,0.8533577919006348,INC67275499,Access granted,0.8954086810353878,3.0,0.5747833787899419,0.8533577919006348
+INC71736542,SUCCESS,"DL created
+EXPMA.HR@dhl.com",0.3285666678449214,0.6262712478637695,INC68436860,"Password has been reset for account  PRG-DC\sr_rpacsMAkart and confirmation email with credentials has been sent to requestor  Nabil.MAHMOUD@dhl.com
+
+account has been converted to ServiceAccount
+
+
+ID: sr_rpacsMAkart
+Name: rpacsMAkart (DHL MA)
+Type: ServiceAccount
+Email: rpacsMAkart@dhl.com
+UPN: rpacsMAkart@dhl.com
+MailHost: gesmail.dhl.com
+OU: OU=Users,O=dhl.com
+Country: MA
+CREST: DMAXXX
+Manager: jl4mn1
+AD DN: CN=sr_rpacsMAkart,OU=Users,OU=Express,OU=MA,DC=prg-dc,DC=dhl,DC=com
+AD created: 9/18/2025 7:51:56 AM
+AD changed: 2/19/2026 3:18:39 PM
+LDAP DN: uid=sr_rpacsMAkart,OU=Users,O=dhl.com
+LDAP created: 9/18/2025 7:52:54 AM
+LDAP changed: 2/19/2026 3:17:13 PM
+SAP SNC: p:CN=SR_RPACSMAKART@PRG-DC.DHL.COM
+Last PWD reset: 2/19/2026 3:20:08 PM
+PWD expire: 2/19/2027 3:16:46 PM
+UAC: 512",0.4631356239318848,1.0,0.16733386744035855,0.7025807499885559
+INC67693039,SUCCESS,Updated SFTP details as requested.,0.3342884306287294,0.4402223229408264,INC66191245,Access has been created. ,0.6772960348516643,2.0,0.28893353392696286,0.5326775312423706
+INC66044184,SUCCESS,"Customeradmin access has been granted for LDAP yoboudra. Please try to login to Proview Support Utility.
+
+For any Proview-related issues or concerns, please submit a ticket through https://gsd.dhl.com/forms/5020.
+",0.3024061478439576,0.635158896446228,INC66191424,Access has been created. ,0.809447318315506,2.0,0.28092743442677676,0.7135668396949768
+INC65088376,SUCCESS,"**************************** SOLUTION - READ ME PLEASE ********************************
+
+Nabil.MAHMOUD@dhl.com> and <Abdelilah.SAMIT@dhl.com> have been added as owners of   cas.suptdesk@dhl.com. No changes were made on dpss.morocco@dhl.com has both already show as secondary owners. 
+ 
+________________________________________________________________________________________
+>>>>>> At the end of this email, you can provide your feedback on the Service provided by Leisy
+using a star scale from 1 (the lowest) to 5 (the highest) to rate your satisfaction. <<<<<<
+ 
+To get information on an existing ticket or how to solve IT issues, please visit http://requestit.dhl.com
+***************************************** END ****************************************
+",0.4096822770115255,0.7935774326324463,INC63628947,"Ownership changed, please use GLOBAL-o365 next time, thank you. Report attached.
+
+notes
+- report indicates which group is legacy and which modern
+- legacy groups can only have one owner effectively
+
+To manage legacy DLs (before they are migrated to cloud):
+To make changes:
+https://mail.dhl.com/ecp
+To request a removal:
+https://servicenow.dhl.com/requestit/category_service.do?sysparm_parent=723169dec3e3c2980767baff05013192
+
+To manage modern DLs (after they are migrated to cloud):
+https://admin.exchange.microsoft.com/?page=groups&form=owa_groups#/
+
+",0.5467887163162232,1.0,0.6683829279570255,0.879023551940918
+INC72044971,SUCCESS,Fixed by Chetan,0.15471077654217422,0.6624984741210938,INC61058067,"The variable has been released. Next time, in such case that the call centre is unavailable please call Emergency Incident Manager and ask for E4 ticket to resolve the issue ASAP.",0.4812492370605469,1.0,0.45221810218978015,0.7150610089302063
+INC67049455,SUCCESS,installed,1.0,0.8342637419700623,INC66989858,installed,0.5671318709850312,1.0,1.0,0.8342637419700623
+INC61075434,SUCCESS,IPs changed and closing as clon of INC61075630,0.35081398831722144,0.9127830862998962,INC61209815,"updated
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+
+
+and created
+
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+",0.8259398472914692,11.0,0.19386670327910577,0.9220934510231018
+INC60986930,SUCCESS,"as per Olivier, there is no changes current prod process. 
+ the XML should be created by DCE but not send to IAS production. Only to DQF prod.
+please create a new ticket if any. ",0.1817276800885337,0.6330353021621704,INC66191424,Access has been created. ,0.8103500008583069,2.0,0.1817276800885337,0.6330353021621704
+INC61398892,SUCCESS,"As per the request printer IP address (marakpr1) changed to 23.82.50.235
+[root@mytpmlspc000352 ~]# lpstat -t |grep marakpr1
+device for marakpr1: socket://23.82.50.235:9100
+marakpr1 accepting requests since Mon 03 Jun 2024 01:08:40 PM GMT
+printer marakpr1 is idle.  enabled since Mon 03 Jun 2024 01:08:40 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]# lpstat -t |grep marakpr1
+device for marakpr1: socket://23.82.50.235:9100
+marakpr1 accepting requests since Fri 10 May 2024 04:51:05 PM GMT
+printer marakpr1 is idle.  enabled since Fri 10 May 2024 04:51:05 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]#  lpstat -t |grep marakpr1
+device for marakpr1: socket://23.82.50.235:9100
+marakpr1 accepting requests since Wed 23 Oct 2024 02:25:03 PM GMT
+printer marakpr1 is idle.  enabled since Wed 23 Oct 2024 02:25:03 PM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep marakpr1
+device for marakpr1: socket://23.82.50.235:9100
+marakpr1 accepting requests since Wed 23 Oct 2024 04:52:36 PM GMT
+printer marakpr1 is idle.  enabled since Wed 23 Oct 2024 04:52:36 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8608309540991268,0.9347060918807983,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8309897101622084,11.0,0.6792850931104698,0.941957950592041
+INC61174995,SUCCESS,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.19186047699335468,0.5737192034721375,INC62067198,IP has been changed.,0.7131588420431518,2.0,0.9999999999999999,0.9648476243019104
+INC69349039,SUCCESS,"Hi, Printer is added to requested servers. Thanks
+
+
+[root@mykullspc000484 ~]# lpadmin -p MARBAOUDPR01 -E -v beh:/1/0/60/socket://23.82.248.234:9100 -m raw
+[root@mykullspc000484 ~]# lpstat -t | grep MARBAOUDPR01
+device for MARBAOUDPR01: beh:/1/0/60/socket://23.82.248.234:9100
+MARBAOUDPR01 accepting requests since Fri 03 Apr 2026 03:01:22 PM GMT
+printer MARBAOUDPR01 is idle.  enabled since Fri 03 Apr 2026 03:01:22 PM GMT",0.8105231411287807,0.848770022392273,INC61302569,"Completed, printers installed on demanded servers:
+MAKENPR4
+----------
+device for MAKENPR4: beh:/1/0/60/socket://23.82.61.234:9100
+MAKENPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAKENPR3
+----------
+device for MAKENPR3: beh:/1/0/60/socket://23.82.61.235:9100
+MAKENPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR4
+----------
+device for MARAKPR4: beh:/1/0/60/socket://23.82.50.234:9100
+MARAKPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR3
+----------
+device for MARAKPR3: beh:/1/0/60/socket://23.82.50.235:9100
+MARAKPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR4
+----------
+device for MAAGAPR4: beh:/1/0/60/socket://23.82.240.234:9100
+MAAGAPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAAGAPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR3
+----------
+device for MAAGAPR3: beh:/1/0/60/socket://23.82.240.235:9100
+MAAGAPR3 accepting requests since Wed 16 Oct 2024 10:33:22 PM GMT
+printer MAAGAPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:22 PM GMT
+",0.8182034781416307,4.0,0.5173277105931716,0.890915036201477
+INC68477217,SUCCESS,"Customer status is now active. A temporary password has been sent to the customer's email address.
+
+",1.0,0.696415901184082,INC68476751,Customer status is now active. A temporary password has been sent to the customer's email address.,0.49820795059204104,1.0,0.07992237394875709,0.7800067067146301
+INC66068398,SUCCESS,"BT Time of Resolution : 2025-10-08T06:36:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Enquiry
+BT Action to Resolve : Advice given
+BT Resolution Details : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+Reason for outage: Enquiry; Responsibility: Customer; Action to Resolve: Advice given",0.9097148487610772,0.9327627420425415,INC66525504,"BT Time of Resolution : 2025-11-03T11:27:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Capacity / Utilisation
+BT Action to Resolve : No Action Taken
+BT Resolution Details : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+Reason for outage: Capacity / Utilisation; Responsibility: Customer; Action to Resolve: No Action Taken",0.9377941327999533,2.0,0.9097148487610772,0.9327627420425415
+INC62342879,SUCCESS,IP has been changed.please validate.,0.3083361082829253,0.9831727147102356,INC61425587,"request completed on requested servers:
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA01
+device for MARBAAGA01: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA01 accepting requests since Thu 10 Jun 2021 12:38:00 PM GMT
+printer MARBAAGA01 is idle.  enabled since Thu 10 Jun 2021 12:38:00 PM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA02
+device for MARBAAGA02: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA02 accepting requests since Mon 24 May 2021 10:12:22 AM GMT
+printer MARBAAGA02 is idle.  enabled since Mon 24 May 2021 10:12:22 AM GMT
+[root@mytpmlspc000352 ~]#
+",0.8467009443113931,12.0,0.3083361082829253,0.9831727147102356
+INC68309155,SUCCESS,all the mentioned applications are updated the time zone.,0.06797490613508098,0.6295161843299866,INC69849293,Holiday on 1st May set as requested.,0.4647580921649933,1.0,-0.07585070306725943,0.9817226529121399
+INC63298387,SUCCESS,"Cas.Helpdesk@dhl.com has been removed from Helpdesk Mauritania GSN group. The already present manager of the group is Ismaila Ngom as can be seen attached.
+
+Mohamed.Ifrah@dhl.com is not set as manager.
+
+Regards,
+CAM team, Milan",0.6956406215503557,0.8048834800720215,INC62481963,User have been removed from Helpdesk Mauritania Group.,0.5524417400360108,1.0,0.6956406215503557,0.8048834800720215
+INC69214837,SUCCESS,DCE access granted,0.15642245037826563,0.8352854251861572,INC68751117,"access granted
+Yassir will check all assiciated agents are visible. ",0.5676427125930786,1.0,0.09454259363462347,0.9184484481811523
+INC67793094,SUCCESS,NMIV account unlocked,0.7094439995340003,0.8518819808959961,INC71762566,unlock Accounts,0.8707595909556722,4.0,0.7094439995340003,0.8518819808959961
+INC63573000,SUCCESS,"Request:
+Access to Team, Assignment
+
+Root Cause:
+access request
+
+Action:
+add access prg team assignment
+
+Solution:
+Access granted and ticket proceed to close ",0.39169983719011886,0.5578052997589111,INC66191424,Access has been created. ,0.7298047913700283,2.0,0.28083972436349713,0.5963879227638245
+INC66525504,SUCCESS,"BT Time of Resolution : 2025-11-03T11:27:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Capacity / Utilisation
+BT Action to Resolve : No Action Taken
+BT Resolution Details : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site ID       : EMTO-MA-EXP-002
+Site category       : copper premium
+Problem Statement Slowness issue in MA SDWAN site : EMTO-MA-EXP-002
+Resolved time :  : Thursday, October 30, 2025 3:04 PM IST
+Supplier name  : bt.technicalsupport@inwi.ma
+Change Ref (if Any) : NA
+RMA (Ref, Date/Time): NA
+RFO : According to supplier technical team this instability in DIA 1 link  is caused by an overload issue.
+Reason for outage: Capacity / Utilisation; Responsibility: Customer; Action to Resolve: No Action Taken",0.9097148487610772,0.9327627420425415,INC66068398,"BT Time of Resolution : 2025-10-08T06:36:53Z
+BT Responsibility : Customer
+BT Reason For Outage : Enquiry
+BT Action to Resolve : Advice given
+BT Resolution Details : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+BT Resolution Code : Solved – Fixed by closing related Incident
+BT Cause : Site Category: Copper premium plus
+Business Impact: NA
+Site Setup: 2 DIA link sdwan site.
+Resolved Time : Tue 07-10-2025 17:08 IST
+Complete Site Isolation: NA
+Affected Component: SDWAN routers
+Reason for Outage: Customer asked to close the case as no more slowness observed in MA sites. No action taken by BT as customer not provided any information regarding slowness alogwith the MDR. so, closing the case as per customer consent.
+Reason for outage: Enquiry; Responsibility: Customer; Action to Resolve: Advice given",0.8923931286426827,2.0,0.9097148487610772,0.9327627420425415
+INC64674219,SUCCESS,"Hi Nabil,
+
+Closing this ticket as 3CA Admin access has been granted for your ldap 'namahmou' under MA country.
+As discussed on teams, pls raise a separate ticket for TN setup in DMAC.
+Kindly refer to the attached template and fill in the necessary details accordingly.
+",0.19427624865674567,0.5297735929489136,INC66191424,Access has been created. ,0.7593206763267517,2.0,0.18085360108732015,0.5684228539466858
+INC63228407,SUCCESS,"Account created, credentials sent directly to user.
+
+Regards
+Amine",0.2621052503924466,0.8582637310028076,INC62704490,"closing as confirmed, access provided. Thank you",0.5791318655014038,1.0,0.2621052503924466,0.8582637310028076
+INC68720925,SUCCESS,DL updated,0.2030609491018664,0.6658778786659241,INC69265308,Necessary done.,0.8171434468705574,2.0,0.24260386033589612,0.9031577110290527
+INC62682395,SUCCESS,"Impact: Payment terms not updated on IAS invoices for one account.
+Root Cause: Account not updated in IAS with new payment term days as this value is not setup via GCDB and it is a manual update to change the payment term days in menu in IAS app
+Solution: Advised caller to raise ticket to IAS with approval to update the payment terms in IAS app 
+Known Issue(Y/N): Y
+Preventative Measure: N/A
+Confluence Page: ",0.8431929613404875,0.6940888166427612,INC63015628,"Impact: Payment terms not updated in IAS
+Root Cause: Default is 7
+Solution: Update the payment terms in IAS for requested account
+Known Issue(Y/N): 
+Preventative Measure:
+Confluence page: 
+",0.49704440832138064,1.0,0.569810118298256,0.6940888166427612
+INC67091919,SUCCESS,installed,0.1890895710176202,0.3860364258289337,INC71295093,"AWB 5890609454 is B2L shipment created based on CSV booking PRG260629128602
+ 
+therefore it was validated in eSecure against PEDRO@ALGOROS.COM 
+ 
+and this email is approved in eSecure to use account 958446916 since June 2024
+ ",0.3430182129144669,1.0,0.4377216147775902,0.4786055088043213
+INC61408648,SUCCESS,"[root@mytpmlspc000352 ~]# lpadmin -p  MARBAGLZ01 -E -v beh:/1/0/60/socket://23.82.244.234:9100
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAGLZ01
+device for MARBAGLZ01: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ01 accepting requests since Mon 03 Jun 2024 03:35:48 PM GMT
+printer MARBAGLZ01 is idle.  enabled since Mon 03 Jun 2024 03:35:48 PM GMT
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAGLZ01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.244.234:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAGLZ01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1717428948 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAGLZ01
+",0.6815801171630601,0.8754853010177612,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.8335590148612517,9.0,0.8413171533306352,0.9127271175384521
+INC70670694,SUCCESS,ODD access has been granted.,0.22861388951960263,0.8750081062316895,INC67331867,Necessary done.,0.5875040531158447,1.0,0.4144478417565365,0.9249280691146851
+INC67951590,SUCCESS,Set as requested.,0.2022659856439049,0.5894197821617126,INC64355365,Stuck session released.,0.7899461984634399,2.0,0.23432653810507284,0.6673805713653564
+INC69926053,SUCCESS,"Hi Nabil,
+
+We have provided the access for the mentioned user to TUNTUN facility.
+
+Thank you,
+Veena V",0.42032377520929454,0.6373634338378906,INC65081688,PMT access has been granted as requested.,0.7518429295964368,4.0,0.721571316843066,0.9517589211463928
+INC62704490,SUCCESS,"closing as confirmed, access provided. Thank you",0.2621052503924466,0.8582637310028076,INC63228407,"Account created, credentials sent directly to user.
+
+Regards
+Amine",0.5791318655014038,1.0,0.2621052503924466,0.8582637310028076
+INC69607667,SUCCESS,Created by: alexandra.danova@leoni.com,0.3060751705803372,0.698108434677124,INC71295093,"AWB 5890609454 is B2L shipment created based on CSV booking PRG260629128602
+ 
+therefore it was validated in eSecure against PEDRO@ALGOROS.COM 
+ 
+and this email is approved in eSecure to use account 958446916 since June 2024
+ ",0.49905421733856203,1.0,0.3060751705803372,0.698108434677124
+INC68501533,SUCCESS,User is re-enabled,0.44765514159721154,0.6861603260040283,INC69150717,"Dear User:
+
+User  Mohamed.Ifrah@dhl.com was removed from all DL that you requested.
+
+bh.commercialair-mea@dhl.com
+bicoe_df_powerbi_users@dhl.com
+caa.ma@dhl.com
+cas.ddpviahtr@dhl.com
+cas.tnsreprt@dhl.com
+commercial_sd_dq@dhl.com
+crisp.main_contact@dhl.com
+df_community@dhl.com
+ehra.report.users@dhl.com
+financewikicommunity@dpdhl.onmicrosoft.com
+fo_eemea_cfo@dhl.com
+g3pall@dhl.com
+istmawareness-dontletitgetthatfar@dpdhl.onmicrosoft.com
+ma.data.privacy@dhl.com
+ma.emergency@dhl.com
+mafc.champions@dhl.com
+ma.ias.alert@dhl.com
+ma_trc_cscesc3@dhl.com
+ma.volunteerday@dhl.com
+mr.ias.alert@dhl.com
+exp_am_glb_fin_bpo_ext-consumer@dhl.com
+
+**********************
+Important Information
+*********************
+
+Please allow 2–4 hours for global replication.
+
+If you experience any further problems, please do not hesitate to contact us with additional details so we can assist you further.
+
+O365 Support Team",0.4930801630020142,1.0,0.24874608385416766,0.7446298599243164
+INC67302526,NO_ACTIONABLE_SOLUTION,"Access granted , please send us your location to make changes in the system.",,,,,,,,
+INC67922214,SUCCESS,accounts have been unlocked.,0.8113448433919714,0.851082444190979,INC70121102,unlock Account,0.9167118592699057,3.0,0.8113448433919714,0.851082444190979
+INC62092735,SUCCESS,"Solution: Login IDs has been created in DCE
+Impact on the business: n/a
+Known Issue (Y/N): n/a
+Root Cause: n/a
+Preventive  Measures: n/a",0.4013889240819892,0.6388679146766663,INC66191245,Access has been created. ,0.7947638630867004,2.0,0.704119685573501,0.7318365573883057
+INC68931827,SUCCESS,"You need to chech with Performance OPS team.
+Contact : wafaa abouchouf
+This information is configured on TTS and GREEF.
+
+Best regards.",0.1073393663685184,0.5392410755157471,INC69123268,A new password generated and just send to  customer,0.41962053775787356,1.0,0.21600070095876583,0.7249398231506348
+INC61209815,SUCCESS,"updated
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+
+
+and created
+
+MYKULLSPC000578
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYKULLSPC000216
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+MYTPMLSPC000351
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Wed 22 Mar 2023 05:42:36 PM GMT
+printer MATNGKEN02 is idle.  enabled since Wed 22 Mar 2023 05:42:36 PM GMT
+MYTPMLSPC000352
+device for MATNGKEN02: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN02 accepting requests since Thu 13 Apr 2023 01:31:26 PM GMT
+printer MATNGKEN02 is idle.  enabled since Thu 13 Apr 2023 01:31:26 PM GMT
+",0.5518439673558091,0.927260160446167,INC61209735,"The printer has been created as requested.
+
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1719573909 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000578 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547352 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000578 ~]#
+
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1720520445 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL01
+[root@mykullspc000216 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547391 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost:631/printers/MARBAADL02
+[root@mykullspc000216 ~]#
+
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1714815877 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000351 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547420 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000351 ~]#
+
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL01
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL01 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1716476134 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL01
+[root@mytpmlspc000352 ~]# lpoptions -p MARBAADL02
+copies=1 device-uri=beh:/1/0/60/socket://23.82.238.236:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 number-up=1 printer-info=MARBAADL02 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Local Raw Printer' printer-state=3 printer-state-change-time=1728547449 printer-state-reasons=none printer-type=4 printer-uri-supported=ipp://localhost/printers/MARBAADL02
+[root@mytpmlspc000352 ~]#
+
+Thanks.",0.830413527239996,10.0,0.5518439673558091,0.927260160446167
+INC71371312,SUCCESS,"The scanners will be updated by next friday inchallah, during the ne new GCA deplyment",0.12029754545074063,0.7629705667495728,INC63105756,"Hello Ali,
+
+Please use webmail, cause we need to reset your computer and this will take time.
+
+Thanks.",0.5314852833747864,1.0,0.12029754545074063,0.7629705667495728
+INC62342134,SUCCESS,IP changed in umex,0.7586810460225425,0.9628295302391052,INC62067198,IP has been changed.,0.8399112602984784,3.0,0.7586810460225425,0.9628295302391052
+INC69544741,NO_ACTIONABLE_SOLUTION,SIM changed for Anass and sent for Zakia,,,,,,,,
+INC68436860,SUCCESS,"Password has been reset for account  PRG-DC\sr_rpacsMAkart and confirmation email with credentials has been sent to requestor  Nabil.MAHMOUD@dhl.com
+
+account has been converted to ServiceAccount
+
+
+ID: sr_rpacsMAkart
+Name: rpacsMAkart (DHL MA)
+Type: ServiceAccount
+Email: rpacsMAkart@dhl.com
+UPN: rpacsMAkart@dhl.com
+MailHost: gesmail.dhl.com
+OU: OU=Users,O=dhl.com
+Country: MA
+CREST: DMAXXX
+Manager: jl4mn1
+AD DN: CN=sr_rpacsMAkart,OU=Users,OU=Express,OU=MA,DC=prg-dc,DC=dhl,DC=com
+AD created: 9/18/2025 7:51:56 AM
+AD changed: 2/19/2026 3:18:39 PM
+LDAP DN: uid=sr_rpacsMAkart,OU=Users,O=dhl.com
+LDAP created: 9/18/2025 7:52:54 AM
+LDAP changed: 2/19/2026 3:17:13 PM
+SAP SNC: p:CN=SR_RPACSMAKART@PRG-DC.DHL.COM
+Last PWD reset: 2/19/2026 3:20:08 PM
+PWD expire: 2/19/2027 3:16:46 PM
+UAC: 512",0.672334989316178,0.7083888053894043,INC68569630,"20260225_174620mkubecek.csv
+UID dhlemployeetype Status
+sr_rpacsMAkart SharedResource Updated
+
+Account type has been changed to a shared mailbox with all necessary permissions to owner Nabil.MAHMOUD@dhl.com
+
+Please note, it can take up to 48 hours when all changes will be visible in Global Address Book, Skype, Lync, MyNet, etc. ",0.5041944026947022,1.0,0.672334989316178,0.7083888053894043
+INC69127746,SUCCESS,"uid dhlApplicationUsage Status
+yassuibg GCA Updated
+
+Please allow 2 to 4 hours for replication.",0.2733675572899915,0.7153608202934265,INC70475284,GCA access has been granted to all requested users.,0.5076804101467133,1.0,0.2733675572899915,0.7153608202934265
+INC64675973,SUCCESS,"Access :
+OB Cap access granted.",0.6329353325114551,0.6704596281051636,INC64845610,Access provided,0.4852298140525818,1.0,0.36756665599954885,0.7418122887611389
+INC60999530,SUCCESS,"By default, no county cutoff codes are configured for the country TN in the TUN service area, unlike the country MA's CAS and RBA service area, which has the following setting.
+
+CAS 08:00:00 13:31:00 A
+CAS 13:32:00 18:30:00 B
+RBA 08:00:00 13:31:00 A
+RBA 13:32:00 18:30:00 B
+
+Please raise another ticket if want to configure the same for TN.",0.18851232449798472,0.553203284740448,INC63573000,"Request:
+Access to Team, Assignment
+
+Root Cause:
+access request
+
+Action:
+add access prg team assignment
+
+Solution:
+Access granted and ticket proceed to close ",0.426601642370224,1.0,0.08724498514931349,0.9668084383010864
+INC69043723,SUCCESS,"I inform you that the ticket has been created  
+
+INC69127896 ",0.17817377080354668,0.6062177419662476,INC66191245,Access has been created. ,0.7983929216861725,2.0,0.1449002023878047,0.9708109498023987
+INC62429598,SUCCESS,Email ID has been removed from CMD and explain to user how it works for SOA,0.11336348799935923,0.6103197336196899,INC67339073,Necessary done.,0.802343875169754,2.0,0.2919913258638337,0.9108883142471313
+INC69347633,NO_ACTIONABLE_SOLUTION,VIF via SotiSurf has been enabled on all whse scanners,,,,,,,,
+INC69918181,SUCCESS,Incident INC69942609 has been created.,0.09433525072732481,0.796500563621521,INC70670694,ODD access has been granted.,0.5482502818107605,1.0,0.09849353852802832,0.9215582609176636
+INC61425587,SUCCESS,"request completed on requested servers:
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA01
+device for MARBAAGA01: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA01 accepting requests since Thu 10 Jun 2021 12:38:00 PM GMT
+printer MARBAAGA01 is idle.  enabled since Thu 10 Jun 2021 12:38:00 PM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep MARBAAGA02
+device for MARBAAGA02: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA02 accepting requests since Mon 24 May 2021 10:12:22 AM GMT
+printer MARBAAGA02 is idle.  enabled since Mon 24 May 2021 10:12:22 AM GMT
+[root@mytpmlspc000352 ~]#
+",0.8224511000538559,0.9618782997131348,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8340364645568255,11.0,0.3083361082829253,0.9831727147102356
+INC62445261,SUCCESS,"===================== NOC RESOLUTION =====================
+Problem description: new subnet to be advertized on IPAM ipcontrol sites for the site name EMTO-MA-EXP-024.
+Resolution summary: Site has been configured in IP control as requested, user confirms ticket closure.
+=================== END NOC RESOLUTION ===================
+",0.24244127906278837,0.539158821105957,INC61174995,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.7572073936462402,2.0,0.16555962603478913,0.9986387491226196
+INC71394759,SUCCESS,"===================== NOC RESOLUTION =====================
+ 
+Problem description:  DHCP configuration
+Resolution summary: Subnets were added and allocated in the corresponding containers; policy/option set and servers were configured as in subnet 23.82.70.192/27 as requested. (See screenshots attached).
+ 
+===================== NOC RESOLUTION =====================",0.32947939952257643,0.5378105640411377,INC61174995,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.7688315510749817,2.0,0.24876193293744125,0.9455454349517822
+INC64252709,SUCCESS,"VPN access granted, please check after 15 minutes",0.29099775241607523,0.45505163073539734,INC71913630,unlock Account,0.7228038609027863,2.0,0.27993474040481714,0.9496606588363647
+INC70345749,SUCCESS,Set as requested.,0.10735342923035175,0.9099964499473572,INC63737085,"Changes complete, closing as confirmed. Thank you very much",0.918534181634284,2.0,0.1801047078401258,0.9548425078392029
+INC67702853,SUCCESS,password reset,0.20248232058999335,0.49717700481414795,INC68455629,"changes complete and confirmed so proceeding with closure, thank you",0.7235761504567633,2.0,0.19437568378744702,0.5583705902099609
+INC68476751,SUCCESS,Customer status is now active. A temporary password has been sent to the customer's email address.,1.0,0.8353114128112793,INC68475577,Customer status is now active. A temporary password has been sent to the customer's email address.,0.5676557064056397,1.0,0.07992237394875709,0.8970322608947754
+INC68159018,SUCCESS,"Updated successfully.
+
+",0.31568309480434587,0.7187632322311401,INC67761932,"Salam Tarik,
+
+The two accounts are well added on the customer session. and well configured on Esecure.",0.5093816161155701,1.0,0.20203228765230868,0.7851176261901855
+INC65410555,SUCCESS,"As per the request printer driver updated 
+
+[root@mykullspc000484 ~]# lpoptions -p marbapr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.70.235:9100 Duplex=none Duplex/Duplex=none finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=marbapr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899319 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/marbapr1
+[root@mykullspc000484 ~]# lpoptions -p makenpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.61.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=makenpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899324 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/makenpr1
+[root@mykullspc000484 ~]# lpoptions -p marakpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.50.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=marakpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899330 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/marakpr1
+[root@mykullspc000484 ~]# lpoptions -p mafezpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.246.234:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=mafezpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899335 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/mafezpr1
+[root@mykullspc000484 ~]#
+
+[root@mykullspc000483 model]# lpoptions -p marbapr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.70.235:9100 Duplex=none Duplex/Duplex=none finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=marbapr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899058 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/marbapr1
+[root@mykullspc000483 model]# lpoptions -p makenpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.61.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=makenpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899091 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/makenpr1
+[root@mykullspc000483 model]# lpoptions -p marakpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.50.235:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=marakpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899138 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/marakpr1
+[root@mykullspc000483 model]# lpoptions -p mafezpr1
+copies=1 device-uri=beh:/1/0/60/socket://23.82.246.234:9100 finishings=3 job-cancel-after=10800 job-hold-until=no-hold job-priority=50 job-sheets=none,none marker-change-time=0 media=na_letter_8.5x11in number-up=1 printer-commands=AutoConfigure,Clean,PrintSelfTestPage printer-info=mafezpr1 printer-is-accepting-jobs=true printer-is-shared=true printer-is-temporary=false printer-location printer-make-and-model='Generic PCL 6/PCL XL Printer Foomatic/ljet4' printer-state=3 printer-state-change-time=1756899190 printer-state-reasons=none printer-type=8433684 printer-uri-supported=ipp://localhost/printers/mafezpr1
+[root@mykullspc000483 model]# 
+
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.
+",0.6427092965124891,0.7996292114257812,INC61241300,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.766342994738848,9.0,0.30803939662007096,0.9438183903694153
+INC65637887,SUCCESS,Access granted. Please allow 1 to 2 hours for replication.,0.2965009151303987,0.6313378214836121,INC65081688,PMT access has been granted as requested.,0.7554913202984399,5.0,0.3185246220066714,0.7254472970962524
+INC63987229,SUCCESS,"We have removed the problematic emails found in the screenshot attached to this ticket (312307841, 311355721,312713805) they should not appear on Souad work list.
+
+We will need specific details of emails to be deleted so we don't accidentally delete other emails, so if you want to remove other problematic emails, please open another ticket providing these details:
+
+Reference IDs with corresponding queues.
+Screenshots of problematic emails filtering by queue instead of agent.",0.43344951600383486,1.0000001192092896,INC62593314,"I extracted a list of all work items present in the worklist for MA KAD Default queue.
+
+There were 44 work items in which we got the following message : Item no longer available, it has been submitted.
+
+I updated all of them at a database level, deleted cache and cookies on browser and checked again in MCT.
+
+The problematic work items are no longer listed in the Worklist.",0.6500000596046448,1.0,0.43344951600383486,1.0000001192092896
+INC67728547,SUCCESS,The Necessary changes are made successfuly.,0.4023367379405454,0.8243985772132874,INC69331599,Necessary done.,0.8968857824802343,3.0,0.4023367379405454,0.8243985772132874
+INC70545090,SUCCESS,"Hi Nabil,
+
+Thanks for reaching eCase support.
+
+We have activated the mentioned users can you kindly raise eCase access via user management module on eCase using below mentioned URL.
+
+Please find the attached screenshot for your reference.
+
+URL: https://dhleecase.service-now.com/um?id=sc_cat_item&sys_id=5941f9021b2d06901118986c9b4bcb6b
+
+Regards,
+Surya Teja",0.3327137926418099,0.5911898612976074,INC66479368,All access has been granted,0.44559493064880373,1.0,0.6748527362394889,1.0
+INC70338644,SUCCESS,Updated. Please allow 4 to 8 hours for replication.,0.1407393187845045,0.7221807241439819,INC64898699,"As requested, the following MODERN DL below have been updated with Abdelilah.SAMIT@dhl.com and Nabil.mahmoud@dhl.com as owner:
+++++++++++++
+rbamvt@dhl.com
+FesMvt@dhl.com
+MekMvt@dhl.com
+TngMvt@dhl.com
+++++++++++++",0.511090362071991,1.0,0.1407393187845045,0.7221807241439819
+INC66191245,SUCCESS,Access has been created. ,0.9999999999999999,0.9256852269172668,INC66191424,Access has been created. ,0.6128426134586334,1.0,0.9999999999999999,0.9256852269172668
+INC61058067,SUCCESS,"The variable has been released. Next time, in such case that the call centre is unavailable please call Emergency Incident Manager and ask for E4 ticket to resolve the issue ASAP.",0.15471077654217422,0.6624984741210938,INC72044971,Fixed by Chetan,0.4812492370605469,1.0,0.15471077654217422,0.6624984741210938
+INC69231876,SUCCESS,"message was sent, see below extract
+
+{
+  ""ToAddress"": ""MADROER"",
+  ""processOutgoingSitaTexId"": 62660358,
+  ""FromAddress"": ""BRUHUBACGCDB@dhl.com"",
+  ""Subject"": ""FFM/ QY926/28MAR"",
+  ""Body"": ""FFM/3\r\n1/QY926/28MAR/BRU\r\nCMN\r\nULD/LAY1292QY\r\n615-62095655BRUCMN/T12K204.8MC1.06/PLATESIDE HS CO\r\nOSI/D23-ACP\r\nSCI//T1\r\nULD/LAY3907QY\r\n615-61719442CMNCMN/T1K102.0MC1.17/MEDICAMENTS\r\nOSI/MDE-ACP\r\nSCI//T1\r\nULD/LAY5306QY\r\n615-00103364BUDCMN/T1K324.0MC1.25/SPARES\r\nOSI/RAG-ACP\r\nSCI//X\r\n615-60514344DUSCMN/T1K23.0MC0.46/PROXIMITY SWITC\r\nOSI/D04-ACP\r\nSCI//X\r\n615-67890244MUCCMN/T2K262.4MC2.3/CONSOLIDATION A\r\nOSI/GAD-ACP\r\nSCI//X\r\nLAST\r\n"",
+
+  ""CreatedDT"": ""2026-03-28T05:06:40.823"",
+
+}",0.19860800928444997,0.58436119556427,INC70892668,Necessary done.,0.44218059778213503,1.0,0.27798167073797353,0.9770857095718384
+INC66476649,SUCCESS,"Dear Yassir/Marouane,
+
+Please be informed that NMIV access can be requested via UOOB in https://servicenow.dhl.com/requestit/
+
+Take note that UOOB is not a default menu for all users in RequestIT. 
+
+UOOB access needs to be requested by your supervisor or manager through the Country Local IT.
+
+Once your supervisor or manager has been granted generic access rights to UOOB, additional rights to Hubs & Gateways Application Request Form is required to finally be able to submit H&G application access request (e.g. NMIV, RUM, MAS etc).
+
+If your supervisor or manager do not have rights to this menu yet, they need to send an email to HGAppsAccess@dhl.com
+
+ITS Service Desk do not require any action for this particular request, hence ticket is closed.
+
+Regards,
+SD",0.307067551780641,0.63675856590271,INC61655655,We have granted the Debrief access.,0.468379282951355,1.0,0.1483970222345598,0.678638219833374
+INC62558517,SUCCESS,Abdelilah identified an issue with the scanner. Device will be replaced.,0.524718472089286,0.5498291254043579,INC68209696,Remote into the scanner and installed OCNT3 app.,0.424914562702179,1.0,0.12274241513787792,0.931029200553894
+INC68957549,SUCCESS,User created,0.15880677796672424,0.7137100696563721,INC67461226,"Hello Amine,
+
+Necessay changes are made.
+
+Best regards.",0.5068550348281861,1.0,0.21389066680145083,0.7393785119056702
+INC61687260,SUCCESS,"IP 23.82.236.234 was already set on all servers. 
+
+[root@mykullspc000578 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Mon 11 Nov 2024 09:25:12 AM GMT
+printer MACASABD01 is idle.  enabled since Mon 11 Nov 2024 09:25:12 AM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Thu 14 Nov 2024 11:22:34 AM GMT
+printer MACASABD01 now printing MACASABD01-2839754.  enabled since Thu 14 Nov 2024 11:22:34 AM GMT
+MACASABD01-2839754      gca              84992   Thu 14 Nov 2024 11:22:34 AM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Fri 10 May 2024 03:43:20 PM GMT
+printer MACASABD01 is idle.  enabled since Fri 10 May 2024 03:43:20 PM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t|grep MACASABD01
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+MACASABD01 accepting requests since Mon 03 Jun 2024 03:34:26 PM GMT
+printer MACASABD01 is idle.  enabled since Mon 03 Jun 2024 03:34:26 PM GMT
+
+
+IP is pingible.
+
+[root@mytpmlspc000351 ~]# ping 23.82.236.234
+PING 23.82.236.234 (23.82.236.234) 56(84) bytes of data.
+64 bytes from 23.82.236.234: icmp_seq=1 ttl=109 time=243 ms
+64 bytes from 23.82.236.234: icmp_seq=2 ttl=109 time=243 ms
+64 bytes from 23.82.236.234: icmp_seq=3 ttl=109 time=243 ms
+^C
+--- 23.82.236.234 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 243.036/243.183/243.292/0.107 ms
+",0.7779072044971378,0.9315773844718933,INC61050624,"Done printers installed and updated as requested.
+
+device for MACASABD01: beh:/1/0/60/socket://23.82.236.234:9100
+device for MACASABD02: beh:/1/0/60/socket://23.82.236.235:9100
+MACASABD01 accepting requests since Mon 03 Jun 2024 03:34:26 PM GMT
+MACASABD02 accepting requests since Fri 27 Sep 2024 02:37:39 PM GMT
+printer MACASABD01 is idle.  enabled since Mon 03 Jun 2024 03:34:26 PM GMT
+printer MACASABD02 is idle.  enabled since Fri 27 Sep 2024 02:37:39 PM GMT",0.8080133935509017,14.0,0.7779072044971378,0.9315773844718933
+INC64536395,SUCCESS,CVPN is no longer supported by ITS. It will be removed for All,0.26974425438714894,0.6099689602851868,INC67178641,SABLE Password reset for the user,0.4549844801425934,1.0,0.08119347594514367,0.6617521047592163
+INC71142560,SUCCESS,"EXP-MA-Finance created
+added Mohamed.Karim.MRINI@dhl.com as admin",0.35747224859553917,0.6534231305122375,INC68957549,User created,0.4767115652561188,1.0,0.26681696244265557,0.7156834602355957
+INC71295093,SUCCESS,"AWB 5890609454 is B2L shipment created based on CSV booking PRG260629128602
+ 
+therefore it was validated in eSecure against PEDRO@ALGOROS.COM 
+ 
+and this email is approved in eSecure to use account 958446916 since June 2024
+ ",0.3060751705803372,0.6981081962585449,INC69607667,Created by: alexandra.danova@leoni.com,0.4990540981292725,1.0,0.3060751705803372,0.6981081962585449
+INC66991237,SUCCESS,"Hello Nabil,
+
+We have updated the primary owner as well as added a secondary owner for the list provided. Please allow up to 24 hours for this to be replicated.
+
+Thanks for your understanding and patience!",0.32925803228827855,0.7743172645568848,INC67243885,Request completed.,0.5371586322784424,1.0,0.32925803228827855,0.7743172645568848
+INC62188298,SUCCESS,"in UMEX is configured:
+
+Workstation RBARBACOY01
+RBARBACOY01_Spider 23.82.70.234:10002
+RBARBACOY01_Zebra 23.82.70.234:10006
+
+Workstation RBARBACOY02
+RBARBACOY02_Spider 23.82.70.234:10003
+RBARBACOY02_printer 23.82.70.237:9100
+
+There was a local issue, the cables were not plugged properly.
+
+Abdelilah solved the issue and confirmed we can close this ticket.",0.4106338833062796,0.7011656761169434,INC61174995,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.8418474197387695,2.0,0.41113566397628837,0.7496956586837769
+INC68352009,SUCCESS,Access granted. pls check and confirm,0.9903937365670272,0.9264305830001831,INC68351684,"Access granted.
+Pls check and confirm",0.6132152915000916,1.0,0.9903937365670272,0.9264305830001831
+INC67243885,SUCCESS,Request completed.,0.24766312388121745,0.7978150844573975,INC64898699,"As requested, the following MODERN DL below have been updated with Abdelilah.SAMIT@dhl.com and Nabil.mahmoud@dhl.com as owner:
+++++++++++++
+rbamvt@dhl.com
+FesMvt@dhl.com
+MekMvt@dhl.com
+TngMvt@dhl.com
+++++++++++++",0.5489075422286988,1.0,0.24766312388121745,0.7978150844573975
+INC71420619,SUCCESS,user created,0.11332121181630073,0.5963852405548096,INC69181840,The necessary changes are made.,0.4481926202774048,1.0,0.28183308355651365,0.6611707806587219
+INC63691050,SUCCESS,"ACCS server had been rebooted to switch from standby to active mode. 
+
+Confirmed with caller and health checks has been successfully completed from our side.",0.43489886549817536,0.7121967673301697,INC69444860,During change some parts of config were removed probably because of network issue. Config re-uploaded.,0.5060983836650849,1.0,0.43489886549817536,0.7121967673301697
+INC61311885,SUCCESS,Created via UMEX,0.5016796601711692,0.7169554233551025,INC61174995,"CCode: SC1
+Cause: User requested to create Workstation / Printer / Scale
+Solution: Created via UMEX
+PM: N/A
+Action by:
+Business Outage (min): 0
+ERR Id: N/A",0.8528383076190948,2.0,0.41113566397628837,0.7496956586837769
+INC62481963,SUCCESS,User have been removed from Helpdesk Mauritania Group.,0.6956406215503557,0.8048834204673767,INC63298387,"Cas.Helpdesk@dhl.com has been removed from Helpdesk Mauritania GSN group. The already present manager of the group is Ismaila Ngom as can be seen attached.
+
+Mohamed.Ifrah@dhl.com is not set as manager.
+
+Regards,
+CAM team, Milan",0.5524417102336884,1.0,0.6956406215503557,0.8048834204673767
+INC64092643,SUCCESS,"We have granted the Debrief access.
+Ldap: islaouni",0.8288769925576976,0.66452956199646,INC66212872,We have granted the Debrief access.,0.7882917134960163,4.0,0.20249215013803323,0.6901755928993225
+INC61302569,SUCCESS,"Completed, printers installed on demanded servers:
+MAKENPR4
+----------
+device for MAKENPR4: beh:/1/0/60/socket://23.82.61.234:9100
+MAKENPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAKENPR3
+----------
+device for MAKENPR3: beh:/1/0/60/socket://23.82.61.235:9100
+MAKENPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAKENPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR4
+----------
+device for MARAKPR4: beh:/1/0/60/socket://23.82.50.234:9100
+MARAKPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MARAKPR3
+----------
+device for MARAKPR3: beh:/1/0/60/socket://23.82.50.235:9100
+MARAKPR3 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MARAKPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR4
+----------
+device for MAAGAPR4: beh:/1/0/60/socket://23.82.240.234:9100
+MAAGAPR4 accepting requests since Wed 16 Oct 2024 10:33:21 PM GMT
+printer MAAGAPR4 is idle.  enabled since Wed 16 Oct 2024 10:33:21 PM GMT
+MAAGAPR3
+----------
+device for MAAGAPR3: beh:/1/0/60/socket://23.82.240.235:9100
+MAAGAPR3 accepting requests since Wed 16 Oct 2024 10:33:22 PM GMT
+printer MAAGAPR3 is idle.  enabled since Wed 16 Oct 2024 10:33:22 PM GMT
+",0.8952406655500964,0.9013499021530151,INC61302608,"done all mentioned printers installed on servers.
+
+MYKULLSPC000578
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:21 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:21 AM GMT
+
+MYKULLSPC000216
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:38 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:38 AM GMT
+
+MYTPMLSPC000351
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:10:54 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:10:54 AM GMT
+
+MYTPMLSPC000352
+device for MATNGKEN03: beh:/1/0/60/socket://23.82.61.234:9100
+MATNGKEN03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MATNGKEN04: beh:/1/0/60/socket://23.82.61.235:9100
+MATNGKEN04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MATNGKEN04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK03: beh:/1/0/60/socket://23.82.50.234:9100
+MARBARAK03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBARAK04: beh:/1/0/60/socket://23.82.50.235:9100
+MARBARAK04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBARAK04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA03: beh:/1/0/60/socket://23.82.240.234:9100
+MARBAAGA03 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA03 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAAGA04: beh:/1/0/60/socket://23.82.240.235:9100
+MARBAAGA04 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAAGA04 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+device for MARBAGLZ02: beh:/1/0/60/socket://23.82.244.234:9100
+MARBAGLZ02 accepting requests since Thu 17 Oct 2024 08:11:19 AM GMT
+printer MARBAGLZ02 is idle.  enabled since Thu 17 Oct 2024 08:11:19 AM GMT
+
+",0.8112594811410456,4.0,0.8952406655500964,0.9013499021530151
+INC69679836,SUCCESS,Data updated,0.4388642410334093,0.5249249339103699,INC64723234,TDocs has been loaded and updated in JIRA as well. Thanks.,0.41246246695518496,1.0,0.47501362353572657,0.5343737602233887
+INC68505429,SUCCESS,PMT access has been granted for ldap oaitibou.,0.8001138372054194,0.9913920164108276,INC68350973,PMT access has been granted as requested,0.8836647354160989,4.0,0.8001138372054194,0.9913920164108276
+INC64845610,SUCCESS,Access provided,0.6329353325114551,0.6704596281051636,INC64675973,"Access :
+OB Cap access granted.",0.4852298140525818,1.0,0.2210306994296842,0.7825205326080322
+INC70819088,SUCCESS,Fixed by user,0.2996449549795325,0.7952570915222168,INC69924062,change done.,0.5476285457611084,1.0,0.601439981708953,0.9189004898071289
+INC69304653,SUCCESS,"Necessary Done. PLT activated.
+",0.4722781764008631,0.8990583419799805,INC69348726,Necessary Done.,0.5995291709899903,1.0,0.4722781764008631,0.8990583419799805
+INC63015628,SUCCESS,"Impact: Payment terms not updated in IAS
+Root Cause: Default is 7
+Solution: Update the payment terms in IAS for requested account
+Known Issue(Y/N): 
+Preventative Measure:
+Confluence page: 
+",0.8431929613404875,0.6940889358520508,INC62682395,"Impact: Payment terms not updated on IAS invoices for one account.
+Root Cause: Account not updated in IAS with new payment term days as this value is not setup via GCDB and it is a manual update to change the payment term days in menu in IAS app
+Solution: Advised caller to raise ticket to IAS with approval to update the payment terms in IAS app 
+Known Issue(Y/N): Y
+Preventative Measure: N/A
+Confluence Page: ",0.4970444679260254,1.0,0.3782696195729438,1.0
+INC66561784,SUCCESS,LDAP jni6o1 has been granted PMT access for both facilities TNGTNG and TNGTTU.,0.6970410785370951,0.9245076179504395,INC65081688,PMT access has been granted as requested.,0.8841168505949653,4.0,0.6970410785370951,0.9245076179504395
+INC64723234,SUCCESS,TDocs has been loaded and updated in JIRA as well. Thanks.,0.17295213151736874,0.6032527685165405,INC62092735,"Solution: Login IDs has been created in DCE
+Impact on the business: n/a
+Known Issue (Y/N): n/a
+Root Cause: n/a
+Preventive  Measures: n/a",0.4516263842582703,1.0,0.3038314371407944,0.6534688472747803
+INC61241300,SUCCESS,"Mentioned printers ip change completed in all the 4 servers
+
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 02:50:38 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 02:50:38 PM GMT
+[root@mykullspc000578 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Wed 18 Sep 2024 01:27:59 PM GMT
+printer marbapr2 is idle.  enabled since Wed 18 Sep 2024 01:27:59 PM GMT
+
+
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 11 Oct 2024 01:53:05 PM GMT
+printer marbapr1 is idle.  enabled since Fri 11 Oct 2024 01:53:05 PM GMT
+[root@mykullspc000216 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Fri 23 Aug 2024 01:46:28 PM GMT
+printer marbapr2 is idle.  enabled since Fri 23 Aug 2024 01:46:28 PM GMT
+
+
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Fri 10 May 2024 03:07:10 PM GMT
+printer marbapr1 is idle.  enabled since Fri 10 May 2024 03:07:10 PM GMT
+[root@mytpmlspc000351 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Tue 12 Mar 2024 09:50:20 AM GMT
+printer marbapr2 is idle.  enabled since Tue 12 Mar 2024 09:50:20 AM GMT
+
+
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr1
+device for marbapr1: beh:/1/0/60/socket://23.82.70.235:9100
+marbapr1 accepting requests since Tue 04 Jun 2024 07:56:53 AM GMT
+printer marbapr1 is idle.  enabled since Tue 04 Jun 2024 07:56:53 AM GMT
+[root@mytpmlspc000352 ~]# lpstat -t | grep marbapr2
+device for marbapr2: beh:/1/0/60/socket://23.82.70.236:9100
+marbapr2 accepting requests since Mon 03 Jun 2024 08:22:06 AM GMT
+printer marbapr2 is idle.  enabled since Mon 03 Jun 2024 08:22:06 AM GMT
+[root@mytpmlspc000352 ~]#
+
+
+",0.8535419345807792,0.8666775226593018,INC61399066,"As per the request printer IP address (MARBARAK01) changed to 23.82.50.234
+
+[root@mytpmlspc000352 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Fri 26 Apr 2024 04:09:58 PM GMT
+printer MARBARAK01 is idle.  enabled since Fri 26 Apr 2024 04:09:58 PM GMT
+[root@mytpmlspc000352 ~]#
+
+[root@mytpmlspc000351 ~]#  lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Thu 14 Mar 2024 12:30:48 PM GMT
+printer MARBARAK01 is idle.  enabled since Thu 14 Mar 2024 12:30:48 PM GMT
+[root@mytpmlspc000351 ~]#
+ 
+[root@mykullspc000216 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Sat 19 Oct 2024 09:58:04 AM GMT
+printer MARBARAK01 is idle.  enabled since Sat 19 Oct 2024 09:58:04 AM GMT
+[root@mykullspc000216 ~]#
+ 
+[root@mykullspc000578 ~]# lpstat -t |grep MARBARAK01
+device for MARBARAK01: socket://23.82.50.234:9100
+MARBARAK01 accepting requests since Wed 23 Oct 2024 05:09:31 PM GMT
+printer MARBARAK01 is idle.  enabled since Wed 23 Oct 2024 05:09:31 PM GMT
+[root@mykullspc000578 ~]#
+
+If you have been satisfied and happy with fast solution, please award us with 5*. Thank you very much.",0.8466473935711731,8.0,0.6417079014677578,0.9177086353302002
+INC63628947,SUCCESS,"Ownership changed, please use GLOBAL-o365 next time, thank you. Report attached.
+
+notes
+- report indicates which group is legacy and which modern
+- legacy groups can only have one owner effectively
+
+To manage legacy DLs (before they are migrated to cloud):
+To make changes:
+https://mail.dhl.com/ecp
+To request a removal:
+https://servicenow.dhl.com/requestit/category_service.do?sysparm_parent=723169dec3e3c2980767baff05013192
+
+To manage modern DLs (after they are migrated to cloud):
+https://admin.exchange.microsoft.com/?page=groups&form=owa_groups#/
+
+",0.4762679605809338,0.8557616472244263,INC64898699,"As requested, the following MODERN DL below have been updated with Abdelilah.SAMIT@dhl.com and Nabil.mahmoud@dhl.com as owner:
+++++++++++++
+rbamvt@dhl.com
+FesMvt@dhl.com
+MekMvt@dhl.com
+TngMvt@dhl.com
+++++++++++++",0.5778808236122132,1.0,0.4762679605809338,0.8557616472244263

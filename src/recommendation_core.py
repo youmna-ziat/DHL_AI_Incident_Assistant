@@ -50,12 +50,19 @@ REQUIRED_COLUMNS = [
 
 def load_knowledge_base(
     resolved_path: str,
-    escalated_path: str
+    escalated_path: str,
+    min_date: Optional[str] = "2025-01-01",
 ) -> pd.DataFrame:
     """Charge les 2 fichiers Excel DHL et construit la base de connaissance unique.
 
     - resolved_path  : tickets traités localement
     - escalated_path : tickets escaladés
+    - min_date       : périmètre du cahier des charges (tickets ouverts
+                       à partir de cette date). None = pas de filtre.
+
+    La colonne Solution est NETTOYÉE (mots de passe, e-mails et numéros
+    masqués, politesses retirées) : c'est ce texte qui est affiché,
+    embarqué et envoyé au LLM.
     """
 
     resolved_df = pd.read_excel(resolved_path)
@@ -80,6 +87,28 @@ def load_knowledge_base(
         )
 
     # --------------------------------------------------------
+    # Périmètre du cahier des charges : tickets >= janvier 2025.
+    # (les tickets sans date valide sont écartés)
+    # --------------------------------------------------------
+    knowledge_base["Opened"] = pd.to_datetime(
+        knowledge_base["Opened"], errors="coerce"
+    )
+
+    if min_date is not None:
+        knowledge_base = knowledge_base[
+            knowledge_base["Opened"] >= pd.Timestamp(min_date)
+        ]
+
+    knowledge_base = knowledge_base.reset_index(drop=True)
+
+    # --------------------------------------------------------
+    # Nettoyage des solutions (secrets masqués, politesses...).
+    # --------------------------------------------------------
+    knowledge_base["Solution"] = (
+        knowledge_base["Solution"].apply(clean_solution_text)
+    )
+
+    # --------------------------------------------------------
     # IMPORTANT :
     # KB_Index est l'identifiant de position stable dans la
     # base complète. Il servira à retrouver les embeddings
@@ -98,201 +127,218 @@ def load_knowledge_base(
 
 
 # ============================================================
-# 2. CLASSIFICATION DES SOLUTIONS
+# 2. NETTOYAGE ET CLASSIFICATION DES SOLUTIONS
 # ============================================================
+#
+# Principe : on ne SUPPRIME aucun ticket (ils restent utiles pour
+# les tendances). On nettoie le texte des solutions, puis on les
+# classe en 4 catégories :
+#   ACTIONABLE      : vraie information (action, diagnostic, explication)
+#   GENERIC         : "resolved", "done", "necessary done"...
+#   ADMINISTRATIVE  : doublon, clôture, ticket rouvert ailleurs...
+#   NON_ACTIONABLE  : attente, redirection, texte trop pauvre
 
-_ADMINISTRATIVE_PATTERNS = [
-    "duplicate",
-    "duplicated",
-    "close the ticket",
-    "ticket to avoid",
-    "no response from user",
-    "regional ticket opened",
-    "new ticket has been raised",
-    "a new ticket has been raised",
-    "ticket has been raised",
-    "ticket opened",
-    "data provided",
-    "information provided",
-    "wrongly routed",
-    "cancelled",
-    "cancelled by",
-]
+# ---------- 2.1 Nettoyage du texte -------------------------------
 
+_MAX_SOLUTION_CHARS = 700
 
-_NON_ACTIONABLE_PATTERNS = [
-    "issue under provider investigations",
-    "provider is working on it",
-    "provider is working on the issue",
-    "no approval is provided",
-    "required information needed to resolve",
-    "required information was not provided",
-    "please ask performance to provide",
-    "please reach out to",
-    "please contact",
-    "please request access from",
-    "not our responsibility",
-    "no issue from our side",
-    "waiting for",
-    "waiting on",
-    "pending",
-    "under investigation",
-    "changes ongoing",
-    "will be changed",
-    "will be configured",
-    "will be installed",
-]
-
-
-_GENERIC_SOLUTIONS = {
-    "resolved",
-    "resolved.",
-    "resolved,",
-    "solved",
-    "solved.",
-    "done",
-    "done.",
-    "fixed",
-    "fixed.",
-    "closed",
-    "closed.",
-    "completed",
-    "completed.",
-    "granted",
-    "access granted",
-    "access granted.",
-    "necessary done",
-    "necessary done.",
-    "necessaey done.",
-    "necessary changes are made.",
-    "the necessary changes are made.",
-    "change done",
-    "change done.",
-    "fixed1",
-}
-
-
-_ACTIONABLE_PATTERNS = [
-    "installed",
-    "installation done",
-    "created",
-    "was created",
-    "has been created",
-    "configured",
-    "configuration done",
-    "updated",
-    "has been updated",
-    "was updated",
-    "changed",
-    "has been changed",
-    "was changed",
-    "replaced",
-    "has been replaced",
-    "removed",
-    "has been removed",
-    "reset",
-    "password generated",
-    "password has been sent",
-    "password was sent",
-    "unlocked",
-    "unlock account",
-    "access granted",
-    "access provided",
-    "granted the",
-    "enabled",
-    "disabled",
-    "recreated",
-    "fixed by",
-    "released",
-    "session released",
-    "restored",
-    "activated",
-    "completed successfully",
-    "request completed",
-    "changes complete",
-    "changes were made",
-    "changes are made",
-    "set as requested",
-    "printer has been created",
-    "printers were recreated",
-    "rebooted",
-    "reconfigured",
-    "configured a new",
-    "synced",
-    "provided the access",
-    "has been granted",
-]
-
-
-_RESOLVED_INC_PREFIX = re.compile(
-    r"^(resolved|fixed)\s+inc[\w-]+"
+_RE_PASSWORD = re.compile(
+    r"(?i)\b(password|passwd|pwd|mot de passe|mdp|mot de passe temporaire)"
+    r"(\s*(?:is|est|:|=|-)\s*)(\S+)"
+)
+_RE_EMAIL = re.compile(r"[\w.\-+]+@[\w\-]+(\.[\w\-]+)+")
+_RE_PHONE = re.compile(r"(?<!\d)(?:\+?\d[\d .\-]{7,}\d)(?!\d)")
+_RE_INC_ONLY = re.compile(r"(?i)^inc[\w\-]*$")
+_RE_GREETING = re.compile(
+    r"(?i)^\s*(hello|hi|hey|dear|bonjour|bonjoru|bonsoir|salut|salam|"
+    r"cher|chère)\b[^,.:\n]{0,40}[,:\-]\s*"
+)
+_RE_SIGNATURE = re.compile(
+    r"(?i)[\s,.;]*(thanks?( you)?( a lot)?|thank you|best regards|"
+    r"kind regards|regards|cordialement|merci( beaucoup)?|bien cordialement)"
+    r"[\s,.!]*([A-Z][\w\-]+)?[\s.!]*$"
+)
+_RE_CCODE = re.compile(
+    r"(?is)CCode:\s*(?P<ccode>.*?)\s*Cause:\s*(?P<cause>.*?)\s*"
+    r"Solution:\s*(?P<solution>.*?)\s*(Preventive Measurement|$)"
 )
 
 
-def classify_solution(solution) -> str:
-    """Classe une solution historique."""
+def clean_solution_text(solution) -> str:
+    """Nettoie une solution brute : secrets masqués, politesses
+    retirées, format structuré CCode/Cause/Solution condensé."""
 
     if pd.isna(solution):
+        return ""
+
+    text = str(solution).replace("\r", "\n")
+
+    # Format structuré "CCode: .. Cause: .. Solution: .."
+    m = _RE_CCODE.search(text)
+    if m:
+        cause = " ".join(m.group("cause").split())
+        sol = " ".join(m.group("solution").split())
+        text = f"{sol}. Cause : {cause}" if cause else sol
+
+    text = " ".join(text.split())
+
+    # Secrets et données personnelles
+    text = _RE_PASSWORD.sub(r"\1\2[MASQUÉ]", text)
+    text = _RE_EMAIL.sub("[EMAIL]", text)
+    text = _RE_PHONE.sub("[TEL]", text)
+
+    # Politesses (début / fin)
+    text = _RE_GREETING.sub("", text, count=1)
+    text = _RE_SIGNATURE.sub("", text).strip()
+
+    # Logs / sorties shell très longs
+    if len(text) > _MAX_SOLUTION_CHARS:
+        text = text[:_MAX_SOLUTION_CHARS].rsplit(" ", 1)[0] + " […]"
+
+    return text
+
+
+# ---------- 2.2 Motifs de classification -------------------------
+
+_ADMINISTRATIVE_PATTERNS = [
+    "duplicate", "duplicated", "doublon",
+    "close the ticket", "ticket will be closed", "closing as confirmed",
+    "closure", "ticket to avoid", "no response from user",
+    "customer confirmed", "caller has confirmed", "confirmed by user",
+    "regional ticket opened", "new ticket has been raised",
+    "ticket has been raised", "ticket opened", "ticket ouvert",
+    "data provided", "information provided", "wrongly routed",
+    "cancelled", "annulé", "rule of 3", "rule of three",
+    "set to status", "required information needed to resolve",
+    "required information was not provided",
+]
+
+_NON_ACTIONABLE_PATTERNS = [
+    "under provider investigation", "issue under provider",
+    "provider is working on", "no approval is provided",
+    "please ask performance", "please reach out to", "please contact",
+    "please request access from", "could you please ask",
+    "not our responsibility", "no issue from our side",
+    "waiting for", "waiting on", "pending", "under investigation",
+    "changes ongoing", "will be changed", "will be configured",
+    "will be installed", "sera fait", "sera faite", "sera faites",
+    "sera installé", "prochaine intervention", "merci de voir avec",
+    "merci de contacter", "veuillez contacter", "en attente",
+    "asap", "waiting", "wait the", "let us wait", "en cours de",
+    "en cours", "dans l'attente", "dealing with", "is working on",
+    "will be send", "will be sent", "will be delivered", "appel moi",
+    "merci de demander", "merci de lui", "merci de ", "merci d'",
+    "your opinion matters", "5 star", "demande a été faite",
+    "will be satisfied", "will be performed",
+]
+
+# Mots "vides" : si TOUT le texte n'est fait que de ces mots,
+# la solution est générique ("necessary is well done", "issue resolved").
+_GENERIC_VOCAB = {
+    "resolved", "resolve", "solved", "done", "fixed", "closed",
+    "completed", "complete", "granted", "ok", "okay", "fine",
+    "necessary", "necessaey", "changes", "change", "are", "is", "was",
+    "were", "been", "has", "have", "made", "well", "the", "a", "an",
+    "issue", "problem", "problème", "probleme", "request", "ticket",
+    "access", "thanks", "thank", "you", "and", "so", "now", "it",
+    "résolu", "resolu", "fait", "terminé", "traité", "le", "la",
+    "nécessaire", "necessaire", "necessay", "est", "été", "bien",
+    "asap", "close", "plz", "pls", "please", "test", "retest", "check",
+    "confirm", "try", "again", "let", "me", "know", "if", "any", "as",
+    "requested", "to", "for", "with", "user", "customer", "caller",
+}
+
+_RESOLVED_INC_PREFIX = re.compile(r"^(resolved|fixed)\s+inc[\w-]+")
+
+_ACTIONABLE_PATTERNS = [
+    # anglais
+    "install", "created", "create ", "configured", "configuration",
+    "updated", "update ", "changed", "replaced", "removed", "deleted",
+    "added", "moved", "reset", "re-imaged", "reimaged", "reinstalled",
+    "restarted", "rebooted", "reconfigured", "recreated", "restored",
+    "synced", "unlocked", "unlock", "enabled", "disabled", "activated",
+    "released", "granted", "provided the access", "password generated",
+    "password has been sent", "fixed by", "fixed the", "has been fixed",
+    "was fixed", "completed successfully", "changes were made",
+    "set as requested", "cleared", "cleaned", "upgraded", "patched",
+    "rebuild", "executed", "enable ", "changes complete",
+    "mapped", "assigned", "extended", "increased", "advised",
+    "new password", "nouveau mot de passe", "password reset",
+    "is up and running", "not an error", "no session found",
+    "not registered", "not registred", "root cause", "cause",
+    # français
+    "installé", "créé", "configuré", "mis à jour", "mise à jour",
+    "remplacé", "supprimé", "ajouté", "déplacé", "réinitialis",
+    "redémarr", "débloqu", "activé", "désactivé", "corrigé", "réparé",
+    "restauré", "synchronis", "c'est normal", "c'est un probleme",
+    "c'est un problème", "le problème vient", "le compte est",
+]
+
+_MIN_WORDS_SUBSTANTIVE = 6
+
+
+def _core_text(s: str) -> str:
+    """Texte en minuscules sans mot de clôture en tête
+    ("resolved, ...", "done. ...")."""
+    s = s.strip().lower()
+    s = re.sub(
+        r"^(resolved|solved|done|fixed|closed)(?!\s+by\b)\s*[,.:;\-]*\s*",
+        "", s,
+    )
+    return s.strip()
+
+
+def classify_solution(solution) -> str:
+    """Classe une solution historique (texte brut ou déjà nettoyé)."""
+
+    cleaned = clean_solution_text(solution)
+
+    if not cleaned:
         return "NON_ACTIONABLE"
 
-    s = str(solution).strip().lower()
+    s = cleaned.lower()
 
-    if not s:
-        return "NON_ACTIONABLE"
-
-    if any(
-        pattern in s
-        for pattern in _ADMINISTRATIVE_PATTERNS
+    if _RE_INC_ONLY.match(s) or any(
+        p in s for p in _ADMINISTRATIVE_PATTERNS
     ):
         return "ADMINISTRATIVE"
 
-    if any(
-        pattern in s
-        for pattern in _NON_ACTIONABLE_PATTERNS
-    ):
-        return "NON_ACTIONABLE"
-
-    if (
-        s in _GENERIC_SOLUTIONS
-        or _RESOLVED_INC_PREFIX.match(s)
-    ):
+    if _RESOLVED_INC_PREFIX.match(s):
         return "GENERIC"
 
-    if any(
-        pattern in s
-        for pattern in _ACTIONABLE_PATTERNS
-    ):
+    tokens = re.findall(r"[\wàâçéèêëîïôûùüÿ'\-]+", s)
+    if not tokens or all(t in _GENERIC_VOCAB for t in tokens):
+        return "GENERIC"
+
+    core = _core_text(s)
+
+    if any(p in core for p in _NON_ACTIONABLE_PATTERNS):
+        return "NON_ACTIONABLE"
+
+    if any(p in core for p in _ACTIONABLE_PATTERNS):
+        return "ACTIONABLE"
+
+    # Texte substantiel sans motif connu : explication / diagnostic.
+    if len(core.split()) >= _MIN_WORDS_SUBSTANTIVE:
         return "ACTIONABLE"
 
     return "NON_ACTIONABLE"
 
 
 _NON_INFORMATIVE_EXACT = {
-    "resolved",
-    "resolved.",
-    "resolve",
-    "solved",
-    "solved.",
-    "closed",
-    "closed.",
-    "done",
-    "done.",
-    "fixed",
-    "fixed.",
+    "resolved", "resolved.", "resolve", "solved", "solved.",
+    "closed", "closed.", "done", "done.", "fixed", "fixed.",
 }
 
-
 _NON_INFORMATIVE_PATTERNS = [
-    "rule of 3",
-    "rule of three",
-    "set to status 'resolved'",
-    "set to status resolved",
+    "rule of 3", "rule of three",
+    "set to status 'resolved'", "set to status resolved",
     "ticket was set to status",
 ]
 
 
 def is_non_informative_solution(solution) -> bool:
-    """True si le texte de solution n'apporte aucune information exploitable."""
+    """True si le texte de solution n'apporte aucune information."""
 
     if pd.isna(solution):
         return True
@@ -305,27 +351,20 @@ def is_non_informative_solution(solution) -> bool:
     if text in _NON_INFORMATIVE_EXACT:
         return True
 
-    return any(
-        pattern in text
-        for pattern in _NON_INFORMATIVE_PATTERNS
-    )
+    return any(p in text for p in _NON_INFORMATIVE_PATTERNS)
 
 
-def add_solution_types(
-    knowledge_base: pd.DataFrame
-) -> pd.DataFrame:
+def add_solution_types(knowledge_base: pd.DataFrame) -> pd.DataFrame:
     """Ajoute solution_type et non_informative."""
 
     knowledge_base = knowledge_base.copy()
 
     knowledge_base["solution_type"] = (
-        knowledge_base["Solution"]
-        .apply(classify_solution)
+        knowledge_base["Solution"].apply(classify_solution)
     )
 
     knowledge_base["non_informative"] = (
-        knowledge_base["Solution"]
-        .apply(is_non_informative_solution)
+        knowledge_base["Solution"].apply(is_non_informative_solution)
     )
 
     return knowledge_base
@@ -382,6 +421,7 @@ def search_similar_tickets(
     model=None,
     top_k: int = 20,
     exclude_ticket: Optional[str] = None,
+    usable_only: bool = False,
 ) -> pd.DataFrame:
     """Retourne les top_k tickets historiques les plus proches.
 
@@ -400,6 +440,12 @@ def search_similar_tickets(
     exclude_ticket:
         Numéro du ticket à exclure.
         Indispensable pour le backtest leave-one-out.
+
+    usable_only:
+        Si True, la recherche ne porte QUE sur les tickets dont la
+        solution est exploitable (ACTIONABLE et informative). Le
+        top-k est alors pris parmi ces tickets, au lieu de filtrer
+        après coup (ce qui laissait très peu de candidats).
     """
 
     query_embedding = compute_embeddings(
@@ -445,6 +491,20 @@ def search_similar_tickets(
             knowledge_base["Number"].astype(str).values
             != str(exclude_ticket)
         )
+
+    if usable_only and "solution_type" in knowledge_base.columns:
+        usable = (
+            knowledge_base["solution_type"] == "ACTIONABLE"
+        ).to_numpy()
+
+        if "non_informative" in knowledge_base.columns:
+            usable = usable & ~(
+                knowledge_base["non_informative"]
+                .astype(bool)
+                .to_numpy()
+            )
+
+        valid_mask = valid_mask & usable
 
     valid_indices = np.flatnonzero(valid_mask)
 
@@ -494,6 +554,66 @@ def search_similar_tickets(
             ascending=False
         )
         .reset_index(drop=True)
+    )
+
+
+def get_similar_groups(
+    query: str,
+    knowledge_base: pd.DataFrame,
+    ticket_embeddings: np.ndarray,
+    model=None,
+    top_k: int = 15,
+    n_groups: int = 3,
+    exclude_ticket: Optional[str] = None,
+) -> list:
+    """Groupes qui ont traité les incidents les plus proches.
+
+    La recherche porte sur TOUS les tickets (même ceux dont la
+    solution est vide ou générique) : savoir QUI traite ce type
+    d'incident reste utile quand aucune solution n'est documentée.
+    """
+
+    neighbours = search_similar_tickets(
+        query=query,
+        knowledge_base=knowledge_base,
+        ticket_embeddings=ticket_embeddings,
+        model=model,
+        top_k=top_k,
+        exclude_ticket=exclude_ticket,
+        usable_only=False,
+    )
+
+    if neighbours.empty or "Assigned Group" not in neighbours.columns:
+        return []
+
+    counts = (
+        neighbours["Assigned Group"]
+        .dropna()
+        .astype(str)
+        .value_counts()
+        .head(n_groups)
+    )
+
+    return [
+        {"Group": group, "Tickets": int(n)}
+        for group, n in counts.items()
+    ]
+
+
+def _groups_sentence(groups: Optional[list]) -> str:
+    """Phrase lisible sur les groupes habituels (peut être vide)."""
+
+    if not groups:
+        return ""
+
+    names = ", ".join(
+        f"{g['Group']} ({g['Tickets']} tickets proches)"
+        for g in groups
+    )
+
+    return (
+        " Les incidents les plus proches ont surtout été traités par : "
+        f"{names}."
     )
 
 
@@ -1372,17 +1492,25 @@ class PipelineResult:
 
     confidence_level: Optional[str] = None  # "HIGH" | "MEDIUM" | "LOW"
 
+    # Groupes ayant traité les incidents les plus proches (additif).
+    similar_groups: Optional[list] = None
+
     def to_dict(self) -> dict:
         return self.__dict__
 
 
-# Seuils de confiance basés sur la distribution observée pendant le
-# backtest (Ticket_Similarity moyenne ~0.76, médiane ~0.77). À
-# ajuster si un backtest plus large donne une distribution différente.
+# Seuils de confiance calibrés sur le backtest leave-one-out
+# (200 tickets) : la Solution_Similarity moyenne passe de ~0.29-0.32
+# (Ticket_Similarity < 0.7) à ~0.38 (0.7-0.8) puis ~0.58 (> 0.8).
 CONFIDENCE_THRESHOLDS = {
-    "HIGH": 0.65,
-    "MEDIUM": 0.45,
+    "HIGH": 0.80,
+    "MEDIUM": 0.70,
 }
+
+# En dessous de cette similarité (meilleur ticket candidat), le
+# pipeline REFUSE de recommander : l'historique ne contient rien de
+# comparable. Valeur de départ à calibrer avec le backtest.
+MIN_TICKET_SIMILARITY = 0.40
 
 
 def _confidence_level(max_similarity: Optional[float]) -> Optional[str]:
@@ -1410,6 +1538,8 @@ def recommend_incident(
     cluster_threshold: float = 0.75,
     exclude_ticket: Optional[str] = None,
     recommendation_generator=None,
+    usable_only: bool = True,
+    min_ticket_similarity: Optional[float] = MIN_TICKET_SIMILARITY,
 ) -> dict:
     """Pipeline complet de recommandation pour un ticket.
 
@@ -1461,7 +1591,60 @@ def recommend_incident(
         model=model,
         top_k=top_k,
         exclude_ticket=exclude_ticket,
+        usable_only=usable_only,
     )
+
+    # Groupes habituels (repli utile même sans solution documentée).
+    similar_groups = get_similar_groups(
+        query=query,
+        knowledge_base=knowledge_base,
+        ticket_embeddings=ticket_embeddings,
+        model=model,
+        exclude_ticket=exclude_ticket,
+    )
+
+    if candidates.empty:
+
+        return PipelineResult(
+            status="NO_ACTIONABLE_SOLUTION",
+            query=query,
+            candidates=candidates,
+            message=(
+                "Aucune solution exploitable n'existe dans l'historique."
+                + _groups_sentence(similar_groups)
+            ),
+            similar_groups=similar_groups,
+        ).to_dict()
+
+    # --------------------------------------------------------
+    # 1bis. GARDE-FOU : similarité minimale
+    #
+    # Si même le meilleur ticket est trop éloigné, mieux vaut dire
+    # "je ne sais pas" que proposer une recommandation sans rapport.
+    # --------------------------------------------------------
+
+    best_similarity = float(candidates["Ticket_Similarity"].max())
+
+    if (
+        min_ticket_similarity is not None
+        and best_similarity < min_ticket_similarity
+    ):
+
+        return PipelineResult(
+            status="LOW_SIMILARITY",
+            query=query,
+            candidates=candidates,
+            max_ticket_similarity=best_similarity,
+            confidence_level="LOW",
+            message=(
+                "Aucun incident vraiment comparable n'a été trouvé "
+                f"dans l'historique (meilleure similarité : "
+                f"{best_similarity:.2f}). Aucune recommandation "
+                "n'est proposée pour éviter une réponse hors sujet."
+                + _groups_sentence(similar_groups)
+            ),
+            similar_groups=similar_groups,
+        ).to_dict()
 
     # --------------------------------------------------------
     # 2. FILTRAGE
@@ -1480,7 +1663,9 @@ def recommend_incident(
             message=(
                 "Des tickets similaires existent mais "
                 "aucune solution exploitable n'a été trouvée."
+                + _groups_sentence(similar_groups)
             ),
+            similar_groups=similar_groups,
         ).to_dict()
 
     # --------------------------------------------------------
@@ -1666,6 +1851,7 @@ def recommend_incident(
         ranked_clusters=ranked_clusters,
         max_ticket_similarity=confidence_basis,
         confidence_level=confidence_level,
+        similar_groups=similar_groups,
     ).to_dict()
 
 
